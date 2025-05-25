@@ -1,0 +1,500 @@
+<html><head>
+
+<link rel="stylesheet" type="text/css" href="gbalink/banner-styles.css">
+<link rel="stylesheet" type="text/css" href="gbalink/iconochive.css">
+
+<title>模拟器硬件DIY</title><meta content="text/html; charset=utf8" http-equiv="Content-Type"><style>A:link {
+	COLOR: #ffc808; TEXT-DECORATION: none
+}
+A:visited {
+	COLOR: #ffc808; TEXT-DECORATION: none
+}
+BODY,TH,TD{
+FONT-SIZE:10pt;FONT-FAMILY:宋体;
+}
+A:hover {
+	COLOR: #ffc808; TEXT-DECORATION: underline
+}</style><meta content="MSHTML 5.00.3103.1000" name="GENERATOR"></head><body bgcolor="#000831" leftmargin="0" text="white" topmargin="0" background="gbalink/back1.gif"><!-- BEGIN WAYBACK TOOLBAR INSERT -->
+
+<style type="text/css">
+body {
+  margin-top:0 !important;
+  padding-top:0 !important;
+  /*min-width:800px !important;*/
+}
+.wb-autocomplete-suggestions {
+    text-align: left; cursor: default; border: 1px solid #ccc; border-top: 0; background: #fff; box-shadow: -1px 1px 3px rgba(0,0,0,.1);
+    position: absolute; display: none; z-index: 2147483647; max-height: 254px; overflow: hidden; overflow-y: auto; box-sizing: border-box;
+}
+.wb-autocomplete-suggestion { position: relative; padding: 0 .6em; line-height: 23px; white-space: nowrap; overflow: hidden; text-overflow: ellipsis; font-size: 1.02em; color: #333; }
+.wb-autocomplete-suggestion b { font-weight: bold; }
+.wb-autocomplete-suggestion.selected { background: #f0f0f0; }
+</style>
+<table border="0" cellpadding="0" cellspacing="0" width="777" align="center"><tbody><tr><td width="24" height="16">&nbsp;</td>
+<td colspan="4">&nbsp;</td>
+<td width="24"></td></tr>
+<tr><td height="24"><img src="gbalink/left_top.gif" width="24" height="24"></td>
+<td valign="top" colspan="4" background="gbalink/top.gif">&nbsp;</td>
+<td valign="top"><img src="gbalink/right_top.gif" width="24" height="24"></td></tr>
+<tr><td valign="top" background="gbalink/left.gif" height="13" rowspan="2">&nbsp;</td>
+<td colspan="4" rowspan="2" valign="center" bgcolor="#103184"><div align="center"><img src="gbalink/head1.jpg" width="705" height="100" usemap="#Map" border="0"> <map name="Map"> <area shape="rect" coords="169,41,285,63" href="#" target="_blank" alt="EMU-ZONE" title="EMU-ZONE"> <area shape="rect" coords="420,42,535,63" href="#" target="_blank" alt="电子DIY" title="电子DIY"> </map></div></td><td rowspan="2" background="gbalink/right.gif"><br></td></tr>
+<tr></tr><tr><td valign="top" height="13"><img src="gbalink/left_bom.gif" width="24" height="24"></td><td colspan="4" background="gbalink/bom.gif" valign="center">&nbsp;</td><td><img src="gbalink/right_bom.gif" width="24" height="24"></td></tr><tr></tr></tbody></table><table border="0" cellpadding="0" cellspacing="0" width="777" align="center"><tbody><tr><td valign="top" width="2%" height="55"><img src="gbalink/center_left.gif" width="23" height="55"></td><td background="gbalink/center.gif" valign="top" width="96%"><a href="index.html"><img border="0" src="gbalink/center_00.gif" alt="首页" width="96" height="55"></a><img border="0" src="gbalink/center_a1.gif" alt="制作" width="96" height="55"><a href="yingjian.html"><img border="0" src="gbalink/center_b0.gif" alt="硬件资料" width="96" height="55"></a><a href="kaifa.html"><img border="0" src="gbalink/center_c0.gif" alt="开发资料" width="96" height="55"></a><a href="buy.html"><img src="gbalink/center_d0.gif" width="96" height="55" alt="购买" border="0"></a></td><td valign="top" width="2%"><img height="55" src="gbalink/center_right.gif" width="23"></td></tr></tbody></table>
+<table border="0" cellpadding="0" cellspacing="0" width="777" align="center"><tbody><tr><td rowspan="3" background="gbalink/left.gif">&nbsp;</td><td colspan="3" rowspan="2" bgcolor="#103184" valign="top"><div align="center" style="width:161px;"><img src="gbalink/lm01.gif" width="168" height="28"><table border="0" width="90%"><tbody><tr><td align="left"><p align="center"><b><br>
+<font size="3">
+<a href="#">GB、GBC、GBA</a><br>
+<a href="#">PlayStation</a><br>
+<a href="#">DC</a><br>
+<a href="#">N64</a><br><br>
+</font>
+</b>
+</p></td></tr></tbody></table></div></td>
+
+	  
+      <td rowspan="3" valign="top"><div align="center">
+	  
+	  
+	  <table style="background-color:#103184" border="0" cellpadding="0" cellspacing="0" width="100%"><tbody><tr><td width="2%"></td>
+            <td width="96%">
+<center> <center>
+                  <br>
+                  <img src="gbalink/gbalink301.jpg" width="200" height="71"><br>
+                  <br>
+				  
+				  		<table style="background-color:#103184" border="0" cellpadding="0" cellspacing="0" width="100%"><tbody><tr>
+				<td width="2%"></td><td width="96%"><br>
+				<table border="0" cellpadding="2" cellspacing="1" width="100%"><tbody><tr bgcolor="#055cad">
+				<td width="25%"><center> <b><a href="#01">GBAlink</a></b> </center></td>
+				<td width="25%"><center> <b><a href="#02">PC遥控器</a></b> </center></td>
+				<td width="25%"><center> <b><a href="#03">3D眼镜</a></b> </center></td>
+				<td width="25%"><center> <b><a href="#04">摇杆</a></b> </center></td>
+				</tr></tbody></table>
+                <br>
+                  <i><a name="01"></a>GBALink烧录系统　实时时钟　独有压缩功能　超强金手指功能　超级记忆系统</i><br>
+                </center>
+				<table border="1" cellpadding="0" cellspacing="0" width="100%" bgcolor="#103184" bordercolor="#000000">
+                  <tbody> 
+                  <tr> 
+                    <td bgcolor="#0a73d4" width="24%" height="18"> 
+                      <center>
+                        名称 
+                      </center>
+                    </td>
+                    <td bgcolor="#0a73d4" width="60%"> 
+                      <center>
+                        内容 
+                      </center>
+                    </td>
+                    <td bgcolor="#0a73d4" width="16%"> 
+                      <center>
+                        作者 
+                      </center>
+                    </td>
+                  </tr>
+                  <tr> 
+                    <td> 
+                      <div align="center"><a href="#">DIY个性化界面大赛作品画廊<img src="gbalink/new.gif" border="0"></a></div>
+                    </td>
+                    <td> 这里有全部《DIY个性化界面大赛》的作品，我们把所有参赛作品重新整理，按<font color="#66FFFF">全部、科幻、动漫、游戏、运动、艺术、景观、GBALINK、其它</font>等主题进行了分类，以方便用户查阅、下载。<br>
+                      <br>
+                      　　下载后把压缩包内的*.SKN文件解压缩到安装好的GBALink软件的Skin目录下，然后打开GBALink软件就可以在个性化界面的界面列表中选择使用了。<br>
+                      <br>
+                    </td>
+                    <td> 
+                      <p>&nbsp;</p>
+                      <p>《电子DIY》<br>
+                      </p>
+                    </td>
+                  </tr>
+                  <tr> 
+                    <td> 
+                      <div align="center"><a href="#">GBALink烧录系统个性化界面使用指南</a><a href="#"><img src="gbalink/new.gif" border="0"></a></div>
+                    </td>
+                    <td> GBALink烧录系统自4.50版之后，便推出了完善的用户个性化界面系统，用户可以自行对合卡菜单、金手指菜单等屏幕中的每个对象进行详细的个性化设置。这里详细介绍个性化界面操作方法。<br>
+                    </td>
+                    <td> 
+                      <p>&nbsp;</p>
+                      <p>《电子DIY》<br>
+                      </p>
+                    </td>
+                  </tr>
+                  <tr> 
+                    <td> 
+                      <div align="center"><a href="#">使用无线网卡和GBALink ZIPII烧录卡玩NDS游戏</a><a href="#"><img src="gbalink/new.gif" border="0"></a></div>
+                    </td>
+                    <td> 这篇文章详细介绍了如何使用WiFiMe软件、无线网卡和GBALink ZIPII烧录卡在NDS上运行应用程序，NDS游戏程序。<br>
+                    </td>
+                    <td> 
+                      <p>&nbsp;</p>
+                      <p>《电子DIY》<br>
+                      </p>
+                    </td>
+                  </tr>
+                  <tr> 
+                    <td> 
+                      <div align="center"><a href="#">GBA Link烧录系统介绍及使用说明</a></div>
+                    </td>
+                    <td> GBA Link烧录系统是GBA游戏机的辅助设备，利用这套系统可以在GBA上运行各种游戏ROM、各种DEMO、各种第三方软件，以达到娱乐及学习、开发等用途。<br>
+                      <br>
+                      <a href="#">4.40版软件说明书</a> <a href="#"><img src="gbalink/new.gif" border="0"></a><a href="#"><br>
+                      4.35版软件说明书</a><br>
+                      <a href="#">4.30版软件说明书 </a> <br>
+                      <a href="#">4.20版软件说明书</a><a href="#"></a><br>
+                      <a href="#">4.0版软件新增功能使用说明</a><br>
+                      <a href="#"> 3.60版软件说明书</a><a href="#"><br>
+                      3.20版软件说明书</a><br>
+                      <a href="#">3.10版软件说明书</a><br>
+                      <a href="#">3.00版软件说明书</a><br>
+                      <a href="#">2.xx版软件说明书</a> <br>
+                    </td>
+                    <td> 
+                      <p>&nbsp;</p>
+                      <p>《电子DIY》</p>
+                      <p>&nbsp;</p>
+                    </td>
+                  </tr>
+                  <tr> 
+                    <td> 
+                      <div align="center"><a href="#">GBA Link烧录系统快速上手</a></div>
+                    </td>
+                    <td><br>
+                      GBA Link烧录系统快速上手。<br>
+                      <br>
+                      <a href="#">4.40版软件快速上手</a> <img src="gbalink/new.gif"><br>
+                      <a href="#">4.35版软件快速上手</a><br>
+                      <a href="#">4.30版软件快速上手</a><br>
+                      <a href="#">4.20版软件快速上手 </a> <br>
+                      <a href="#">3.60版软件快速上手</a><br>
+                      <a href="#">3.20版软件快速上手</a><br>
+                      <a href="#">3.10版软件快速上手</a><br>
+                      <a href="#">3.00版软件快速上手</a><br>
+                      <a href="#">2.xx版软件快速上手</a> <br>
+                    </td>
+                    <td> 
+                      <p>&nbsp;</p>
+                      <p>《电子DIY》<br>
+                      </p>
+                    </td>
+                  </tr>
+                  <tr> 
+                    <td> 
+                      <div align="center"><a href="#">GBA Link USB烧录器驱动程序安装详解</a></div>
+                    </td>
+                    <td> GBALink USB烧录器驱动程序安装详解。<br>
+                    </td>
+                    <td> 
+                      <p>&nbsp;</p>
+                      <p>《电子DIY》<br>
+                      </p>
+                    </td>
+                  </tr>
+                  <tr> 
+                    <td> 
+                      <div align="center"><a href="#">GBA Link烧录系统常见问题解答</a> 
+                      </div>
+                    </td>
+                    <td> GBA Link烧录系统的常见问题解答。<br>
+                    </td>
+                    <td> 
+                      <p>&nbsp;</p>
+                      <p>《电子DIY》<br>
+                      </p>
+                    </td>
+                  </tr>
+                  <tr> 
+                    <td> 
+                      <div align="center"><a href="#">GBALink四折页宣传资料下载</a> 
+                      </div>
+                    </td>
+                    <td> GBALink四折页宣传资料。包括GBALink烧录系统特点介绍。<br>
+                    </td>
+                    <td> 
+                      <p>&nbsp;</p>
+                      <p>《电子DIY》<br>
+                      </p>
+                    </td>
+                  </tr>
+                  <tr> 
+                    <td> 
+                      <div align="center">GBALink ZIP II第三方评测报告 <img src="gbalink/new.gif" width="28" height="11"></div>
+                    </td>
+                    <td> 　<a href="#">《ZIP II 抢先评测》</a>--魔剑士但丁 <br>
+                      <br>
+                      　<a href="#">《ZIP II 详细评测》</a>--MSN-04 
+                      SAZABI<br>
+                    </td>
+                    <td> 
+                      <p>&nbsp;</p>
+                      <p>《电子DIY》<br>
+                      </p>
+                    </td>
+                  </tr>
+                  <tr> 
+                    <td> 
+                      <div align="center"><a href="#">GBALink三折页宣传资料下载</a></div>
+                    </td>
+                    <td> GBALink三折页宣传资料。<br>
+                    </td>
+                    <td> 
+                      <p>&nbsp;</p>
+                      <p>《电子DIY》<br>
+                      </p>
+                    </td>
+                  </tr>
+                  <tr> 
+                    <td> 
+                      <div align="center"><a href="#">GBA Link配套软件下载</a></div>
+                    </td>
+                    <td>你可以来这里下载升级你的GBA Link软件。<br>
+                    </td>
+                    <td> 
+                      <p>&nbsp;</p>
+                      <p>《电子DIY》</p>
+                      <p>&nbsp;</p>
+                    </td>
+                  </tr>
+                  <tr> 
+                    <td> 
+                      <div align="center"><a href="#">GBA相关工具软件下载</a></div>
+                    </td>
+                    <td><br>
+                      这里是GBA的一些相关工具软件的下载，包括：GBA上看书工具、看图工具、MPA音乐播放软件、GBA上的电影片断、EEPROM补丁等等<br>
+                      <br>
+                    </td>
+                    <td> 
+                      <p>&nbsp;</p>
+                      <p>《电子DIY》<br>
+                      </p>
+                    </td>
+                  </tr>
+                  <tr> 
+                    <td> 
+                      <div align="center"><a href="#">ZIP系列FLASH卡带测试报告</a></div>
+                    </td>
+                    <td> 为了能让大家更准确的了解到ZIP系列卡带的性能，我们做了以下的测试，所有的数据都是客观真实的。<br>
+                    </td>
+                    <td> 
+                      <p>&nbsp;</p>
+                      <p>《电子DIY》</p>
+                      <p>&nbsp;</p>
+                    </td>
+                  </tr>
+                  <tr> 
+                    <td> 
+                      <div align="center"><a href="#">让你的GBA更好玩－－集三大功能于一身的GBA 
+                        Link</a></div>
+                    </td>
+                    <td> 　　你喜欢GBA吗？那么你也会喜欢上GBA Link的；你拥有一台GBA吗？那么你也应该拥有一套GBA Link。GBA 
+                      Link的魅力何在呢，因为它具备三大功能:<br>
+                      　　第一大功能是使用电脑存取游戏进度。<br>
+                      　　第二大功能是无需任何卡带玩FC(NES)游戏。<br>
+                      　　第三大功能是DUMP卡带ROM。 <br>
+                    </td>
+                    <td> 
+                      <p>&nbsp;</p>
+                      <p>《电子DIY》</p>
+                      <p>&nbsp;</p>
+                    </td>
+                  </tr>
+                  <tr> 
+                    <td> 
+                      <div align="center"><a href="#">GBA的游戏进度下载</a></div>
+                    </td>
+                    <td>玩游戏都离不开游戏进度，你可以把这里的游戏进度使用GBA Link写入到自己的游戏卡带中，让你的英雄立刻功力大增，手握众多法宝，所向无敌。</td>
+                    <td> 
+                      <p>&nbsp;</p>
+                      <p>《电子DIY》</p>
+                      <p>&nbsp;</p>
+                    </td>
+                  </tr>
+                  <tr> 
+                    <td> 
+                      <div align="center"><a href="#">GBA Link烧录系统最新测试</a></div>
+                    </td>
+                    <td>这里是目前测试完成的各种功能：玩最新的中文版游戏、听音乐、看电子书、看照片、看漫画书、玩NES游戏。</td>
+                    <td> 
+                      <p>&nbsp;</p>
+                      <p>《电子DIY》<br>
+                      </p>
+                    </td>
+                  </tr>
+                  <tr> 
+                    <td> 
+                      <div align="center"><a href="#">GBA卡带更换电池图解</a></div>
+                    </td>
+                    <td>当GBA卡带不能正常存储游戏进度时，一般是卡带内的电池没有电了，这时就需要更换电池，这里就是如何更换电池的详细图解。</td>
+                    <td> 
+                      <p>&nbsp;</p>
+                      <p>《电子DIY》<br>
+                      </p>
+                    </td>
+                  </tr>
+                  <tr> 
+                    <td> 
+                      <div align="center"><a href="#">便宜才是硬道理－－自己动手打造GBA 
+                        Link FLASH卡带</a></div>
+                    </td>
+                    <td><br>
+                      在GBA Link烧录系统中，除了GBA Link烧录器外，还需要FLASH卡带与之配套。除了购买我们的FLASH卡带外，还可以自己动手改造手头现有的D版卡带。这样不但可以充分利用手头的闲置卡带，还能节省不少银子，亦可享受一下DIY的乐趣。<br>
+                      <br>
+                    </td>
+                    <td> 
+                      <p>&nbsp;</p>
+                      <p>《电子DIY》<br>
+                      </p>
+                    </td>
+                  </tr>
+                  </tbody> 
+                </table>
+                <br><center>
+                </center>
+              </center>
+            </td><td width="2%"></td></tr></tbody></table></div>
+			
+			
+			<div align="center">
+			
+			
+			<br><center> <center><br><i><a name="02"></a>PC遥控器：红外遥控，易如反掌----玩尽你的PC机</i><br></center><table border="1" cellpadding="0" cellspacing="0" width="100%" bgcolor="#103184" bordercolor="#000000"><tbody><tr><td bgcolor="#0a73d4" width="24%" height="18"><center> 名称 </center></td><td bgcolor="#0a73d4" width="60%"><center> 内容 </center></td><td bgcolor="#0a73d4" width="16%"><center> 作者 </center></td></tr><tr><td><div align="center"><a href="#">PC遥控器简介</a></div></td><td>你可以先了解一下PC遥控器。</td><td><p>《电子DIY》</p><p>&nbsp;</p></td></tr><tr><td><div align="center"><a href="#">自己做红外遥控接收装置</a></div></td><td>自己动手，其乐无穷－－自己做红外遥控接收装置</td><td><p>《电子DIY》</p><p>&nbsp;</p></td></tr><tr><td><div align="center"><a href="#">遥控驱动软件Girder</a></div></td><td>Girder软件详细使用说明。这是一个非常优秀的红外遥控软件，我们一直在使用，强烈推荐。<br>(<a href="#">下载Girder3.0.23 zip</a>文件926K，内含中文语言)<br></td><td><p>《电子DIY》</p><p>&nbsp;</p></td></tr><tr><td><div align="center"><a href="#">遥控软件快速上手</a></div></td><td>如果觉得前面介绍的软件设置太麻烦，看这里没错的。</td><td><p>《电子DIY》</p><p>&nbsp;</p></td></tr></tbody></table><br><center><br><i><a name="03"></a>3D眼镜：让我们共同进入真正的立体世界</i><br><table border="1" cellpadding="0" cellspacing="0" width="100%" bgcolor="#103184" bordercolor="#000000"><tbody><tr><td bgcolor="#0a73d4" width="24%" height="18"><center> 名称 </center></td><td bgcolor="#0a73d4" width="60%"><center> 内容 </center></td><td bgcolor="#0a73d4" width="16%"><center> 作者 </center></td></tr><tr><td><div align="center"><a href="#">判断你的计算机能否使用3D眼镜</a></div></td><td>很多朋友不知道自己的计算机能否使用3D眼睛，看这篇文章就很清楚了。<br></td><td><p>《电子DIY》</p><p>&nbsp;</p></td></tr><tr><td><div align="center"><a href="#">液晶眼镜有线型电路</a></div></td><td>自己动手做液晶眼镜。（有线型数字电路）。</td><td><p>《电子DIY》</p><p>&nbsp;</p></td></tr><tr><td><div align="center"><a href="#">ELSA雷眼驱动文件列表</a></div></td><td>ELSA雷眼驱动附加各软件档案的介绍及雷眼驱动和相关软件的下载。</td><td><p>《电子DIY》</p><p>&nbsp;</p></td></tr><tr><td><div align="center"><a href="#">ELSA雷眼驱动的使用</a></div></td><td>想在游戏中得到真正的3D效果，就要用好ELSA雷眼驱动。</td><td><p>《电子DIY》</p><p>&nbsp;</p></td></tr><tr><td><div align="center"><a href="#">NVIDIA 3D驱动功能介绍</a></div></td><td>这里有驱动的下载、驱动的安装介绍和驱动的详细功能说明。<br></td><td><p>《电子DIY》</p><p>&nbsp;</p></td></tr><tr><td><div align="center"><a href="#">NVIDIA驱动的一般调整方法</a></div></td><td>当你安装好NVIDIA的立体驱动后，需要进行适当的调整才能更好的来玩游戏。这里还详细介绍了怎么在游戏中调整立体效果的方法。<br></td><td><p>《电子DIY》</p><p>&nbsp;</p></td></tr><tr><td><div align="center"><a href="#">如何观看游戏立体抓图</a></div></td><td>我们网站上的立体游戏抓图提供了两种方式：“自由看”和“立体图”，有些朋友可能不知道这两种立体图是怎么看的，这里详细了说明观看的方法。<br></td><td><p>《电子DIY》</p><p>&nbsp;</p></td></tr><tr><td><div align="center"><a href="#">3D游戏抓图一</a></div></td><td>3D游戏在Nvidia驱动下立体抓图。<br>(极品飞车－保时捷之旅、尾行2(1)、滑板特级王TRICK STYLE、龙女、QUAKEIII－雷神竞技场)&lt;包含自由看&gt;</td><td><p>《电子DIY》</p><p>&nbsp;</p></td></tr><tr><td><div align="center"><a href="#">3D游戏抓图二</a></div></td><td>3D游戏的立体抓图。<br>(Kof99 EVO、沙丘魔堡3000、Z字特工队之钢铁战士、三角洲特种部队3：大地勇士、尾行2(2))&lt;包含自由看&gt;</td><td><p>《电子DIY》</p><p>&nbsp;</p></td></tr><tr><td><div align="center"><a href="#">3D游戏抓图三</a></div></td><td>3D游戏的立体抓图。<br>( 部落2、死亡之屋2日版、雷曼2胜利大逃亡、跳跳虎、虚幻3世纪精英赛)&lt;包含自由看&gt;</td><td><p>《电子DIY》</p><p>&nbsp;</p></td></tr><tr><td><div align="center"><a href="#">模拟器游戏</a></div></td><td>常用模拟器（PS、Impact、N64）游戏在3D眼镜下的使用效果评价、抓图。</td><td><p>《电子DIY》</p><p>&nbsp;</p></td></tr></tbody></table></center><br><br><i><a name="04"></a>摇杆：这感觉，怎一个爽字了得！！！</i><br></center>
+              <table border="1" cellpadding="0" cellspacing="0" width="100%" bgcolor="#103184" bordercolor="#000000">
+                <tbody> 
+                <tr> 
+                  <td bgcolor="#0a73d4" width="24%" height="18"> 
+                    <center>
+                      名称 
+                    </center>
+                  </td>
+                  <td bgcolor="#0a73d4" width="60%"> 
+                    <center>
+                      内容 
+                    </center>
+                  </td>
+                  <td bgcolor="#0a73d4" width="16%"> 
+                    <center>
+                      作者 
+                    </center>
+                  </td>
+                </tr>
+                <tr> 
+                  <td> 
+                    <div align="center"><a href="#">街机摇杆DIY</a></div>
+                  </td>
+                  <td>真正的街机配件制作的PC街机摇杆，真正的街机感觉！！！</td>
+                  <td> 
+                    <p>《电子DIY》</p>
+                    <p>&nbsp;</p>
+                  </td>
+                </tr>
+                <tr> 
+                  <td> 
+                    <div align="center"><a href="#">街机遥杆欣赏</a></div>
+                  </td>
+                  <td>制作的其它种类的街机摇杆（使用索尼手柄改装）。<br>
+                  </td>
+                  <td> 
+                    <p>《电子DIY》</p>
+                    <p>&nbsp;</p>
+                  </td>
+                </tr>
+                <tr> 
+                  <td> 
+                    <div align="center"><a href="#">手柄改装资料</a></div>
+                  </td>
+                  <td>几种游戏手柄线路板和电脑的接法（索尼、土星、超任...）。</td>
+                  <td> 
+                    <p>《电子DIY》</p>
+                    <p>&nbsp;</p>
+                  </td>
+                </tr>
+                <tr> 
+                  <td> 
+                    <div align="center"><a href="#">手柄驱动安装</a></div>
+                  </td>
+                  <td>DirectPAD PRO手柄驱动程序安装及使用方法。<br>
+                    下载：<a href="#">dpadpr50.zip</a>、兼容其它手柄驱动版本：<a href="#">dpro5.0_patch.zip</a></td>
+                  <td> 
+                    <p>《电子DIY》</p>
+                    <p>&nbsp;</p>
+                  </td>
+                </tr>
+                <tr> 
+                  <td> 
+                    <div align="center"><a href="#">PS震动手柄改PC的供电方法全面剖析</a></div>
+                  </td>
+                  <td><br>
+                    PS震动手柄用在电脑上算是老古董的改造了，算起来已经有2年多的历史了吧，现在市面上已经有很多地方有现成的卖了，不过市面上卖的这些手柄好像都没有PS原装震动手柄的手感好，所以还是的自己动动手了。不过做为以前的改造方法，其中最不方便的也就算是给震动提供的电源部分了，所以我们现在讨论的就是这个问题。你可以看看左图，这个就是我们已经改造好的PS震动手柄的连接线，它可以使用电脑的USB或游戏口取电源。<br>
+                  </td>
+                  <td> 
+                    <p>《电子DIY》</p>
+                    <p>&nbsp;</p>
+                  </td>
+                </tr>
+                <tr> 
+                  <td> 
+                    <div align="center"><font size="2"><a href="#">自制街机摇台</a></font></div>
+                  </td>
+                  <td>　　上次我们的街机摇杆制作文章引起了朋友们的极大反响，凡是玩过街机游戏的朋友大概都期望能在电脑前也体验到街机的那种酣畅淋漓的感觉，我们也正是出于这种想法，才制作了那个摇杆，但那个摇杆也是很久以前做的东西了，它还存在一些问题，这回被朋友们的热情所感动，于是动手重新设计制作了这款街机摇台，由于是立式结构，它的稳固程度绝对能和街机媲美。<br>
+                    <br>
+                  </td>
+                  <td> 
+                    <p>《电子DIY》</p>
+                    <p>&nbsp;</p>
+                  </td>
+                </tr>
+                <tr> 
+                  <td> 
+                    <div align="center"><font size="2"><a href="#">改进型街机摇台介绍</a></font></div>
+                  </td>
+                  <td>这次改进的街机摇台结合了上次制作摇台的经验，稳固程度上不变，改进了外观和性能。</td>
+                  <td> 
+                    <p>《电子DIY》</p>
+                    <p>&nbsp;</p>
+                  </td>
+                </tr>
+                <tr> 
+                  <td> 
+                    <div align="center"><font size="2"><a href="#">改进型街机摇台装配方法</a></font></div>
+                  </td>
+                  <td>由于摇台比较大，邮寄运输不太方便，所以我们采用把主要部件安装好，而把台子的各个板子拆开包装的方法运输。这样，朋友们收到的摇台就是一套散件，这里介绍的就是这套东西的详细装配方法。<br>
+                    <br>
+                  </td>
+                  <td> 
+                    <p>《电子DIY》</p>
+                    <p>&nbsp;</p>
+                  </td>
+                </tr>
+                <tr> 
+                  <td> 
+                    <div align="center"><a href="#">改进型街机摇台各连接线接法</a></div>
+                  </td>
+                  <td>由于街机摇台比较笨重，一但出现毛病要寄回我们维修也不方便，下面就是摇台各连接线的详细接法，这样如果出现问题，就可以自己根据下面的接线图来进行检修，这样如果只是掉个线头之类的毛病，接上就行了。<br>
+                    <br>
+                  </td>
+                  <td> 
+                    <p>《电子DIY》</p>
+                    <p>&nbsp;</p>
+                  </td>
+                </tr>
+                <tr> 
+                  <td> 
+                    <div align="center"><font size="2"><a href="#">改进型街机摇台使用方法</a></font></div>
+                  </td>
+                  <td>改进后的街机摇台具有PS和电脑连接线，可以随时更换连接线，来配合PS和电脑使用。并且具有一个扩展接口,可以插游戏机手柄适配器，来连接游戏机，比如DC，SS。这里就是这些连接线和扩展适配器的使用方法。<br>
+                    <br>
+                  </td>
+                  <td> 
+                    <p>《电子DIY》</p>
+                    <p>&nbsp;</p>
+                  </td>
+                </tr>
+                </tbody> 
+              </table>
+              <br></td><td width="2%"></td></tr></tbody></table></div>
+
+			</td>
+	 
+	  
+    <td rowspan="3" background="gbalink/right.gif"><br></td><td width="1"></td></tr><tr><td height="47"></td></tr><tr><td colspan="3" bgcolor="#103184" valign="top">&nbsp;<br></td><td height="2"></td></tr><tr><td valign="top" height="13"><img src="gbalink/left_bom.gif" width="24" height="24"></td><td colspan="4" background="gbalink/bom.gif" valign="center">&nbsp;</td><td><img src="gbalink/right_bom.gif" width="24" height="24"></td><td></td></tr><tr><td height="0"></td><td></td><td width="885"></td><td width="19"></td><td width="100%"></td><td></td><td></td></tr></tbody></table>
+	<br>
+	<table border="0" cellpadding="0" cellspacing="0" width="777" align="center"><tbody><tr><td rowspan="2" width="24" height="24"><img src="gbalink/left_top.gif" width="24" height="24"></td><td colspan="4" rowspan="2" background="gbalink/top.gif">&nbsp;</td><td rowspan="2" width="24" height="24"><img src="gbalink/right_top.gif" width="24" height="24"></td></tr><tr></tr><tr><td valign="top" background="gbalink/left.gif" height="13" rowspan="2"></td><td colspan="4" rowspan="2" valign="center" bgcolor="#103184">
+      <div align="center">【模拟器硬件DIY】版权所有 Copyright(C) 2001-2004 本站资料未经许可，请勿转载，如有需求，请<a href="#">联系</a>。</div>
+    </td><td rowspan="2" background="gbalink/right.gif"><br></td></tr><tr></tr><tr><td valign="top" height="13"><img src="gbalink/left_bom.gif" width="24" height="24"></td><td colspan="4" background="gbalink/bom.gif" valign="center">&nbsp;</td><td><img src="gbalink/right_bom.gif" width="24" height="24"></td></tr><tr></tr></tbody></table>&nbsp;<br></body></html>

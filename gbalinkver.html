@@ -1,0 +1,1584 @@
+<html><head>
+
+<link rel="stylesheet" type="text/css" href="gbalink/banner-styles.css">
+<link rel="stylesheet" type="text/css" href="gbalink/iconochive.css">
+
+<title>模拟器硬件DIY</title><meta content="text/html; charset=utf8" http-equiv="Content-Type"><style>A:link {
+	COLOR: #ffc808; TEXT-DECORATION: none
+}
+A:visited {
+	COLOR: #ffc808; TEXT-DECORATION: none
+}
+BODY,TH,TD{
+FONT-SIZE:10pt;FONT-FAMILY:宋体;
+}
+A:hover {
+	COLOR: #ffc808; TEXT-DECORATION: underline
+}</style><meta content="MSHTML 5.00.3103.1000" name="GENERATOR"></head><body bgcolor="#000831" leftmargin="0" text="white" topmargin="0" background="gbalink/back1.gif"><!-- BEGIN WAYBACK TOOLBAR INSERT -->
+
+<style type="text/css">
+body {
+  margin-top:0 !important;
+  padding-top:0 !important;
+  /*min-width:800px !important;*/
+}
+.wb-autocomplete-suggestions {
+    text-align: left; cursor: default; border: 1px solid #ccc; border-top: 0; background: #fff; box-shadow: -1px 1px 3px rgba(0,0,0,.1);
+    position: absolute; display: none; z-index: 2147483647; max-height: 254px; overflow: hidden; overflow-y: auto; box-sizing: border-box;
+}
+.wb-autocomplete-suggestion { position: relative; padding: 0 .6em; line-height: 23px; white-space: nowrap; overflow: hidden; text-overflow: ellipsis; font-size: 1.02em; color: #333; }
+.wb-autocomplete-suggestion b { font-weight: bold; }
+.wb-autocomplete-suggestion.selected { background: #f0f0f0; }
+</style>
+<table border="0" cellpadding="0" cellspacing="0" width="777" align="center"><tbody><tr><td width="24" height="16">&nbsp;</td>
+<td colspan="4">&nbsp;</td>
+<td width="24"></td></tr>
+<tr><td height="24"><img src="gbalink/left_top.gif" width="24" height="24"></td>
+<td valign="top" colspan="4" background="gbalink/top.gif">&nbsp;</td>
+<td valign="top"><img src="gbalink/right_top.gif" width="24" height="24"></td></tr>
+<tr><td valign="top" background="gbalink/left.gif" height="13" rowspan="2">&nbsp;</td>
+<td colspan="4" rowspan="2" valign="center" bgcolor="#103184"><div align="center"><img src="gbalink/head1.jpg" width="705" height="100" usemap="#Map" border="0"> <map name="Map"> <area shape="rect" coords="169,41,285,63" href="#" target="_blank" alt="EMU-ZONE" title="EMU-ZONE"> <area shape="rect" coords="420,42,535,63" href="#" target="_blank" alt="电子DIY" title="电子DIY"> </map></div></td><td rowspan="2" background="gbalink/right.gif"><br></td></tr>
+<tr></tr><tr><td valign="top" height="13"><img src="gbalink/left_bom.gif" width="24" height="24"></td><td colspan="4" background="gbalink/bom.gif" valign="center">&nbsp;</td><td><img src="gbalink/right_bom.gif" width="24" height="24"></td></tr><tr></tr></tbody></table><table border="0" cellpadding="0" cellspacing="0" width="777" align="center"><tbody><tr><td valign="top" width="2%" height="55"><img src="gbalink/center_left.gif" width="23" height="55"></td><td background="gbalink/center.gif" valign="top" width="96%"><a href="index.html"><img border="0" src="gbalink/center_00.gif" alt="首页" width="96" height="55"></a><img border="0" src="gbalink/center_a1.gif" alt="制作" width="96" height="55"><a href="yingjian.html"><img border="0" src="gbalink/center_b0.gif" alt="硬件资料" width="96" height="55"></a><a href="kaifa.html"><img border="0" src="gbalink/center_c0.gif" alt="开发资料" width="96" height="55"></a><a href="buy.html"><img src="gbalink/center_d0.gif" width="96" height="55" alt="购买" border="0"></a></td><td valign="top" width="2%"><img height="55" src="gbalink/center_right.gif" width="23"></td></tr></tbody></table>
+<table border="0" cellpadding="0" cellspacing="0" width="777" align="center"><tbody><tr><td rowspan="3" background="gbalink/left.gif">&nbsp;</td><td colspan="3" rowspan="2" bgcolor="#103184" valign="top"><div align="center" style="width:161px;"><img src="gbalink/lm01.gif" width="168" height="28"><table border="0" width="90%"><tbody><tr><td align="left"><p align="center"><b><br>
+<font size="3">
+<a href="#">GB、GBC、GBA</a><br>
+<a href="#">PlayStation</a><br>
+<a href="#">DC</a><br>
+<a href="#">N64</a><br><br>
+</font>
+</b>
+</p></td></tr></tbody></table></div></td>
+<td rowspan="3" valign="top" bgcolor="#103184">
+     
+        　　　　　　　　　　　　　　<b><font size="3">GBA Link配套软件下载</font></b><br>
+      <br>
+      <hr>
+      <b></b><b>　<a href="#">GBALink USB烧录器驱动程序下载</a>及<a href="#" target="_blank">驱动程序安装详解</a><br>
+      <br>
+      　繁体中文的游戏名库，<a href="#">这里下载</a><br>
+      </b> 
+      <hr>
+      <b></b><b><br>
+      2006/5/12</b><br>
+      GBA Link配套软件5.82版　<a href="#">下载</a><br>
+      <br>
+      　1.增强DSROM兼容性，修正部分ROM的白屏死机问题<br>
+      　　(0434,0423,0421,0419,0417,0413,0412,0408,0407,0401,0402,0366等)。<br>
+      <br>
+      　2.修正TetrisDS的WIFI功能不正常的问题。<br>
+      <br>
+      　3.游戏中文名库更新到GBA:2403,DS:0435。<br>
+      <br>
+      　4.内置的已知ROM的压缩信息更新到0435。 <br>
+      <br>
+      　<font color="#00FFFF">注：</font>1.如果还有个别DSROM白屏，可以尝试用引导卡引导进入（对刷过FLASHME的，插入引导<br>
+      　　　　卡，开机按SELECT键）或刷机为FLASHMEV5。<br>
+      　　　2.为防止存档意外丢失请大家养成良好的操作习惯：在DS模式的合卡菜单下关机。也就是<br>
+      　　　　玩过游戏后重新开关机一次到DS模式的合卡菜单，然后关机即可。 
+      <hr>
+      <b><br>
+      2006/3/2</b><br>
+      GBA Link配套软件5.81版　<a href="#">下载</a><br>
+      <br>
+      　1.修正部分DS游戏不定时死机的问题。<br>
+      <br>
+      　2.内置的已知ROM的压缩信息更新到0343。<br>
+      <br>
+      　3.游戏中文名库更新到GBA:2323,DS:0343。<br>
+      <br>
+      　<font color="#00FFFF">注：</font>1.如果需要使用<a href="#">GoombaColor</a>来玩GBC游戏，可以把<a href="#">GoombaColor</a>压缩包内的goomba.gba<br>
+      　　　　自行拷贝覆盖安装好的GBALink软件目录下的同名文件即可。<br>
+      　　　2.为防止存档意外丢失请大家养成良好的操作习惯：在DS模式的合卡菜单下关机。也就是<br>
+      　　　　玩过游戏后重新开关机一次到DS模式的合卡菜单，然后关机即可。 
+      <hr>
+      <b>2006/1/28</b><br>
+      GBA Link配套软件5.80版　下载<br>
+      <br>
+      　<b><font color="#FFFF00">1.增强超过256M ROM的压缩能力。</font></b> <br>
+      <br>
+      　　(1).这个功能是通过事先计算并收集ROM压缩信息来实现更强的ROM压缩能力。所以<br>
+      　　　　对收集到的信息存放在特定文件中，对于缺少信息的ROM在添加ROM时将提示是<br>
+      　　　　否收集这个ROM的压缩信息。压缩信息仅需要收集一次，以后再添加这个ROM将<br>
+      　　　　不在提示。<br>
+      <br>
+      　　(2).通过事先计算并收集ROM压缩信息实现更强ROM压缩能力不会影响PC端软件压缩<br>
+      　　　　或在NDS上解压缩的速度。<br>
+      <br>
+      　　(3).5.80版软件已经内置了已知ROM的压缩信息（0001-0296,部分汉化/RIPROM）。<br>
+      <br>
+      　　(4).经过测试，增强超过256MROM的压缩能力后，部分ROM的压缩比变化如下：<br>
+      <br>
+      <table width="80%" border="0" cellspacing="0" align="center" cellpadding="0" bgcolor="#000000">
+        <tbody><tr> 
+          <td> 
+            <table width="100%" border="0" cellspacing="1" bgcolor="#000000" cellpadding="3">
+              <tbody><tr bgcolor="#0066FF" bordercolor="#000000"> 
+                <td width="45%" height="20" bgcolor="#0066FF"> 
+                  <div align="center"><b>ROM</b></div>
+                </td>
+                <td width="18%" height="20"> 
+                  <div align="center"><b>5.70压缩</b></div>
+                </td>
+                <td width="18%" height="20"> 
+                  <div align="center"><b>5.80压缩</b></div>
+                </td>
+                <td width="19%" height="20"> 
+                  <div align="center"><b>多压掉</b></div>
+                </td>
+              </tr>
+              <tr bgcolor="#FFFF99" bordercolor="#000000"> 
+                <td width="45%" height="14"> 
+                  <div align="center"><font color="#000000">0016行星保卫战(512M)</font></div>
+                </td>
+                <td width="18%" height="14"> 
+                  <div align="center"><font color="#000000">428M</font></div>
+                </td>
+                <td width="18%" height="14"> 
+                  <div align="center"><font color="#000000">390M</font></div>
+                </td>
+                <td width="19%" height="14"> 
+                  <div align="center"><font color="#000000">38M</font></div>
+                </td>
+              </tr>
+              <tr bgcolor="#FFFF99" bordercolor="#000000"> 
+                <td width="45%"> 
+                  <div align="center"><font color="#000000">0028触摸!卡比(512M)</font></div>
+                </td>
+                <td width="18%"> 
+                  <div align="center"><font color="#000000">313M</font></div>
+                </td>
+                <td width="18%"> 
+                  <div align="center"><font color="#000000">250M</font></div>
+                </td>
+                <td width="19%"> 
+                  <div align="center"><font color="#000000">63M</font></div>
+                </td>
+              </tr>
+              <tr bgcolor="#FFFF99" bordercolor="#000000"> 
+                <td width="45%"> 
+                  <div align="center"><font color="#000000">0035触摸!卡比(512M)</font></div>
+                </td>
+                <td width="18%"> 
+                  <div align="center"><font color="#000000">314M</font></div>
+                </td>
+                <td width="18%"> 
+                  <div align="center"><font color="#000000">250M</font></div>
+                </td>
+                <td width="19%"> 
+                  <div align="center"><font color="#FF0000">64M</font></div>
+                </td>
+              </tr>
+              <tr bgcolor="#FFFF99" bordercolor="#000000"> 
+                <td width="45%"> 
+                  <div align="center"><font color="#000000">0044网球王子(512M)</font></div>
+                </td>
+                <td width="18%"> 
+                  <div align="center"><font color="#000000">233M</font></div>
+                </td>
+                <td width="18%"> 
+                  <div align="center"><font color="#000000">231M</font></div>
+                </td>
+                <td width="19%"> 
+                  <div align="center"><font color="#000000">2M</font></div>
+                </td>
+              </tr>
+              <tr bgcolor="#FFFF99" bordercolor="#000000"> 
+                <td width="45%"> 
+                  <div align="center"><font color="#000000">0058火影忍者(512M)</font></div>
+                </td>
+                <td width="18%"> 
+                  <div align="center"><font color="#000000">412M</font></div>
+                </td>
+                <td width="18%"> 
+                  <div align="center"><font color="#000000">291M</font></div>
+                </td>
+                <td width="19%"> 
+                  <div align="center"><font color="#FF0000">121M</font></div>
+                </td>
+              </tr>
+              <tr bgcolor="#FFFF99" bordercolor="#000000"> 
+                <td width="45%"> 
+                  <div align="center"><font color="#000000">0094恶魔城(512M)</font></div>
+                </td>
+                <td width="18%"> 
+                  <div align="center"><font color="#000000">283M</font></div>
+                </td>
+                <td width="18%"> 
+                  <div align="center"><font color="#000000">225M</font></div>
+                </td>
+                <td width="19%"> 
+                  <div align="center"><font color="#FF0000">58M</font></div>
+                </td>
+              </tr>
+              <tr bgcolor="#FFFF99" bordercolor="#000000"> 
+                <td width="45%"> 
+                  <div align="center"><font color="#000000">0266美丽天使(512M)</font></div>
+                </td>
+                <td width="18%"> 
+                  <div align="center"><font color="#000000">287M</font></div>
+                </td>
+                <td width="18%"> 
+                  <div align="center"><font color="#000000">252M</font></div>
+                </td>
+                <td width="19%"> 
+                  <div align="center"><font color="#000000">35M</font></div>
+                </td>
+              </tr>
+              <tr bgcolor="#FFFF99" bordercolor="#000000"> 
+                <td width="45%"> 
+                  <div align="center"><font color="#000000">0269龙行者(512M)</font></div>
+                </td>
+                <td width="18%"> 
+                  <div align="center"><font color="#000000">270M</font></div>
+                </td>
+                <td width="18%"> 
+                  <div align="center"><font color="#000000">261M</font></div>
+                </td>
+                <td width="19%"> 
+                  <div align="center"><font color="#000000">9M</font></div>
+                </td>
+              </tr>
+              <tr bgcolor="#FFFF99" bordercolor="#000000"> 
+                <td width="45%"> 
+                  <div align="center"><font color="#000000">0279大人的高尔夫(512M)</font></div>
+                </td>
+                <td width="18%"> 
+                  <div align="center"><font color="#000000">390M</font></div>
+                </td>
+                <td width="18%"> 
+                  <div align="center"><font color="#000000">329M</font></div>
+                </td>
+                <td width="19%"> 
+                  <div align="center"><font color="#FF0000">61M</font></div>
+                </td>
+              </tr>
+              <tr bgcolor="#FFFF99" bordercolor="#000000"> 
+                <td width="45%"> 
+                  <div align="center"><font color="#000000">0283钢铁之羽(512M)</font></div>
+                </td>
+                <td width="18%"> 
+                  <div align="center"><font color="#000000">340M</font></div>
+                </td>
+                <td width="18%"> 
+                  <div align="center"><font color="#000000">311M</font></div>
+                </td>
+                <td width="19%"> 
+                  <div align="center"><font color="#000000">29M</font></div>
+                </td>
+              </tr>
+              <tr bgcolor="#FFFF99" bordercolor="#000000"> 
+                <td width="45%"> 
+                  <div align="center"><font color="#000000">更多........</font></div>
+                </td>
+                <td width="18%"> 
+                  <div align="center"></div>
+                </td>
+                <td width="18%"> 
+                  <div align="center"></div>
+                </td>
+                <td width="19%"> 
+                  <div align="center"></div>
+                </td>
+              </tr>
+            </tbody></table>
+          </td>
+        </tr>
+      </tbody></table>
+      <br>
+      　2.修正添加0158转换时软件出错。<br>
+      <br>
+      　3.游戏中文名库更新到GBA:2304,DS:0296。<br>
+      <br>
+      <br>
+      　<font color="#00FFFF">注：</font>为防止存档意外丢失请大家养成良好的操作习惯：在DS模式的合卡菜单下关机。也就是玩过游戏后重新开关机一次到DS模式的合卡菜单，然后关机即可。
+<hr>
+      <b>2006/1/24</b><br>
+      GBA Link配套软件5.70版　下载<br>
+      <br>
+      　<b><font color="#FFFF00">1.支持NDS和GBA联动功能，并且只需要ZIPII512M卡带即可。</font></b><br>
+      　　该功能开创使用GBA卡槽烧录卡的联动先河，用户再无因占用GBA卡槽无法支持游戏<br>
+      　　联动的担心。 <br>
+      <br>
+      　　(1).测试逆转DS+逆转1联动成功！恶魔城DS+晓月联动成功! 大合奏+扩展包联动成<br>
+      　　　　功！还有更多游戏均支持联动功能。测试详情请查看论坛：<br>
+      　　　　<a href="#" target="_blank">http://bbs.emu-zone.org/showthread.php?p=3612451</a><br>
+      <br>
+      　　(2).烧写时只需要在NDS游戏后跟着烧写上要联动的GBA游戏即可，不过要注意这个<br>
+      　　　　GBA游戏不能使用压缩格式。 <br>
+      <br>
+      　　(3).如果某游戏联动时需要检测GBA游戏的存档的话，在进入游戏前先进入一次GBA<br>
+      　　　　游戏然后再进入DS游戏即可。 <br>
+      <br>
+      　　(4).单卡实现联动功能更比插两个卡带（DS+GBA）更加省电方便。 <br>
+      <br>
+      　　(5).我们从网上搜集整理了部分NDS游戏的联动方法，<a href="#" target="_blank">见这里</a>。<br>
+      <br>
+      　　注：<br>
+      　　(1).联动功能在FLASHME V6或不刷机用SPRITEKEY引导测试有效，或者使用FLASHME<br>
+      　　　　V5时，使用引导卡按SELECT键开机进入也可以。<br>
+      <br>
+      　　　另外说一下，FLASHME V5刷FLASHME V6可以用单卡模式直接烧写刷机程序后按<br>
+      　　　4键进入刷机，不需要先刷回NOFLASHME，通常情况也不用短路SL1。反过来<br>
+      　　　FLASHME V6刷FLASHME V5也是一样。而且对这种已经刷过FLASHME的，再次刷<br>
+      　　　FLASHME即使中途失败也没有风险，可以再次开机按 ABXY 4键进入刷机。<br>
+      <br>
+      　　　注意：目前发现原始固件为V4版(不是FLASHMEV4)的NDS更新FLASHME版本需要再<br>
+      　　　　　　次短路SL1。
+<p>　　(2).大合奏游戏情况特殊，进入时容易自动关机，重试即可，另外在进入前在触摸<br>
+        　　　屏上按在将要出现的骷髅头处会增大进入的机会。所以对大合奏建议使用网上高<br>
+        　　　手制作的sammy_remake_2.0 ROM。<br>
+        <br>
+        　2.修正部分游戏压缩后死机的问题。<br>
+        <br>
+        　3.游戏中文名库更新到DS:0290。<br>
+        <br>
+        　<font color="#00FFFF">注：</font>为防止存档意外丢失请大家养成良好的操作习惯：在DS模式的合卡菜单下关机。也就是玩过游戏后重新开关机一次到DS模式的合卡菜单，然后关机即可。</p>
+                    <hr>
+      <b>2006/1/21</b><br>
+      GBA Link配套软件5.60版　<a href="#">下载</a><br>
+      <br>
+      　1.解决部分游戏GAMEOVER后白屏问题，已测试0239 TAO,0276生化危机,0283钢之羽压<br>
+      　　缩和不压缩模式均正常。<br>
+      <br>
+      　2.支持0192口袋妖怪之不可思议迷宫的存档。<br>
+      <br>
+      　3.解决动物之森WIFI设定黑屏的问题，因为ROM处理后超出容量，所以该项仅对512卡<br>
+      　　带有效。<br>
+      <br>
+      　4.解决大合奏压缩运行自动关机的问题。<br>
+      <br>
+      　5.解决ZIP2 256M卡带运行桃子公主没声音，美版动物之森无法进入的问题。<br>
+      <br>
+      　6.修正PC端SMS功能备份NDS存档数据大小不正确的问题。<br>
+      <br>
+      　7.改进NDS ROM转换性能，压缩模式运行的游戏更加稳定，避免可能的死机情况。<br>
+      <br>
+      　8.游戏中文名库更新到GBA:2303,DS:0285。<br>
+      <br>
+      　<font color="#00FFFF">注：</font>为防止存档意外丢失请大家养成良好的操作习惯：在DS模式的合卡菜单下关机。也就是玩过游戏后重新开关机一次到DS模式的合卡菜单，然后关机即可。<br>
+      <hr>
+      <b>2006/1/12</b><br>
+      GBA Link配套软件5.50版　<a href="#">下载</a><br>
+      <br>
+      　1.支持编号为0246-0250等的NDS游戏。<br>
+      <br>
+      　2.修正0136碧奇公主的白屏问题。<br>
+      <br>
+      　3.对GBA游戏支持一部分新游戏的存档补丁（比如铸剑物语）,并且修正了2239的存档<br>
+      　　补丁问题。<br>
+      <br>
+      　4.改进存档系统，完善支持0193动物之森日版0223动物之森美版存档。<br>
+      <br>
+      　5.<b><font color="#FFFF00">支持NDS存档在GBA模式下的自动备份</font></b>，这样运行NDS游戏后进入GBA模式不会再出现<br>
+      　　存档不能自动备份的提示。<br>
+      　　这样利用GBA模式自动保存NDS的存档到备份区，可以解决PASSME2在存档区放入的启动<br>
+      　　代码和游戏存档冲突的问题。<br>
+      <br>
+      　6.<font color="#FFFF00"><b>支持NDS游戏的SMS存档备份功能。</b></font>NDS游戏目前可以使用GBA模式的SMS功能备份和<br>
+      　　恢复存档。如果你的NDS是使用FLASHME请开机前按SELECT键进入GBA模式。<br>
+      　　 (由于时间关系，NDS模式的SMS功能在以后的软件版本中将逐步支持)<br>
+      <br>
+      　7.解决在NDS模式运行的GBA游戏跳帧问题。<br>
+      <br>
+      　8.整理ROM名列表，去掉了一部分名字后的(U)之类的游戏语言标记，更加整齐规范。<br>
+      <br>
+      　9.游戏中文名库更新到GBA:2297,DS:0264。<br>
+      <br>
+      　<font color="#00FFFF">注1：</font>由于改进了存档系统，目前的存档数据格式和以前版本的软件不兼容。这样如果你的卡带使用的是5.50版以前的软件烧录的游戏，请先用以前的版本备份游戏进度。并且卡带已经烧写有游戏，请用5.50版软件重新烧写，否则将不能使用存档备份更新功能。并且对于SMS里存储的存档也是一样，也需要以前版本的软件事先备份。<br>
+      <br>
+      　<font color="#00FFFF">注2：</font>为防止存档意外丢失请大家养成良好的操作习惯：在DS模式的合卡菜单下关机。也就是玩过游戏后重新开关机一次到DS模式的合卡菜单，然后关机即可。<br>
+      <hr>
+      <b>2005/12/13</b><br>
+      GBA Link配套软件5.30版　<a href="#">下载</a><br>
+      <br>
+      　1.<font color="#FFFF00"><b>支持马车，龙珠，滑板等新游戏的免Z卡和GBA卡存档</b></font>。<br>
+      <br>
+      　2.<b><font color="#FFFF00">支持NDS模式进入GBA游戏时另外一个不用的屏幕背光关闭</font></b>，加上GBA模式支持的独特花边功能，这个GBA模式已经比较完美了。<br>
+      <br>
+      　3.修正转换ROM中的一个错误，解决了0195不支持的问题。<br>
+      <br>
+      　4.游戏中文名库更新到GBA:2276,DS:0230。<br>
+      <br>
+      　<font color="#00FFFF">注：</font>为防止存档意外丢失请大家养成良好的操作习惯：在DS模式的合卡菜单下关机。也就是玩过游戏后重新开关机一次到DS模式的合卡菜单，然后关机即可。<br>
+      <hr>
+      <b>2005/12/3</b><br>
+      GBA Link配套软件5.21版　<a href="#">下载</a><br>
+      <br>
+      　1.支持0193。<br>
+      <br>
+      　2.优化DS ROM重建方式，对部分ROM转换后的文件更小。<br>
+      <br>
+      　3.支持.NDS.GBA扩展名的NDS程序。<br>
+      <br>
+      　4.修正个别压缩的NDS游戏出现的死机问题。<br>
+      <br>
+      　5.修正可能引起DS ROM转换失败的一个错误。<br>
+      <br>
+      　6.游戏中文名库更新到GBA:2261,DS:0221。<br>
+      <br>
+      　<font color="#00FFFF">注：</font>为防止存档意外丢失请大家养成良好的操作习惯：在DS模式的合卡菜单下关机。也就是玩过游戏后重新开关机一次到DS模式的合卡菜单，然后关机即可。<br>
+      <br>
+      <hr>
+      <b>2005/11/12</b><br>
+      GBA Link配套软件5.20版　<a href="#">下载</a><br>
+      <br>
+      　1.<font color="#FFFF00"><b>对超过256M容量的DSROM支持压缩功能</b></font>，这样无论多大的DSROM都可以压缩。用户无需花钱升级硬件，即可有效增大卡带空间。并且解压缩速度只需要25秒左右。<br>
+      <br>
+      　2.游戏中文名库更新到GBA:2226,DS:0162。<br>
+      <br>
+      　<font color="#00FFFF">注：</font>为防止存档意外丢失请大家养成良好的操作习惯：在DS模式的合卡菜单下关机。也就是玩过游戏后重新开关机一次到DS模式的合卡菜单，然后关机即可。<br>
+      <br>
+      <hr>
+      <b>2005/10/21</b><br>
+      GBA Link配套软件5.11版　下载<br>
+      <br>
+      　1.支持0136的存档。<br>
+      <br>
+      　2.使用FLASHME时自动进入合卡菜单（要进入GBA模式，开机前一直按着Select键）。<br>
+      <br>
+      　3.合卡菜单标题显示正确的版本号。<br>
+      <br>
+      　4.增加47个ROM的金手指数据。<br>
+      <br>
+      　5.游戏中文名库更新到GBA:2189,DS:0138。<br>
+      <br>
+      　<font color="#00FFFF">注：</font>为防止存档意外丢失请大家养成良好的操作习惯：在DS模式的合卡菜单下关机。也就是玩过游戏后重新开关机一次到DS模式的合卡菜单，然后关机即可。<br>
+      <br>
+      <hr>
+      <b>2005/10/18</b><br>
+      GBA Link配套软件5.10版　下载<br>
+      <br>
+      　1.增强DS游戏的兼容性，原来不能使用GBA卡存档的现在全面支持，并且解决了个别游<br>
+      　　戏出现的中间固定位置死机问题，达到目前最强的兼容性。<br>
+      <br>
+      　2.支持FLASHME，可以脱离引导卡进入DS模式运行DS游戏。<br>
+      <br>
+      　3.增强对DS个人制作的软件和一些DEMO的兼容性，支持一些.NDS扩展名的非标准格式<br>
+      　　ROM。<br>
+      <br>
+      　4.内置的PCE模拟器更新为PCEAdvance 7.50。<br>
+      <br>
+      　5.游戏中文名库更新到GBA:2181,DS:0135。<br>
+      <br>
+      　<font color="#00FFFF">注：</font>为防止存档意外丢失请大家养成良好的操作习惯：在DS模式的合卡菜单下关机。也就是玩过游戏后重新开关机一次到DS模式的合卡菜单，然后关机即可。<br>
+      <br>
+      <hr>
+      <b>2005/9/29</b><br>
+      GBA Link配套软件5.00正式版　<a href="#">下载</a><br>
+      <br>
+      　1.达到目前最强的兼容性，支持99%的DS游戏。<br>
+      <br>
+      　2.对全系列ZIP系列卡带支持DS游戏(包括128M，256M等)。（需要用单卡模式烧录）<br>
+      <br>
+      　3.对DS游戏自动紧缩容量，使原本满512M容量的ROM可以直接支持并加入合卡菜单，更<br>
+      　　使所有ROM都更加小巧。并且以后版本的软件还将支持超过256M ROM的压缩，使512M<br>
+      　　卡带可以支持超过512M容量的游戏。敬请期待。<br>
+      <br>
+      　4.支持对单卡模式的DS游戏存档备份和更新，功能在主菜单-&gt;卡带-&gt;备份/更新卡带的<br>
+      　　游戏进度-&gt;ZIP系列256K。<br>
+      <br>
+      　5.修正一个可能引起存档丢失的问题。<br>
+      <br>
+      　6.游戏中文名库更新到GBA:2154,DS:0110。<br>
+      <br>
+      　<font color="#00FFFF">注：</font>为防止存档意外丢失请大家养成良好的操作习惯：在DS模式的合卡菜单下关机。也就是玩过游戏后重新开关机一次到DS模式的合卡菜单，然后关机即可。<br>
+      <br>
+      <hr>
+      <b><font color="#FF3333">2005/9/18</font></b><br>
+      GBA Link配套软件5.00测试第3版　下载<br>
+      <br>
+      　1.增强DS游戏的兼容性，一部分不支持的DS游戏可以运行了。<br>
+      <br>
+      　2.修正部分ROM需要解压缩２遍的问题。<br>
+      <br>
+      　3.增强引导进入DS模式的稳定性，不再容易出现白屏问题。<br>
+      <br>
+      　4.修正对256M卡带的刷新卡带出现格式错误的问题。<br>
+      <br>
+      　5.增加44个ROM的金手指数据。<br>
+      <br>
+      　6.游戏中文名库更新到GBA:2132,DS:0101。<br>
+      <hr>
+      <b>2005/8/31</b><br>
+      GBA Link配套软件5.00测试第2版　下载<br>
+      <br>
+      　1.修正SMS功能。<br>
+      <br>
+      　2.修正一个SRAM管理中的错误，这个错误可能会引起存档数据错误。<br>
+      <br>
+      　3.修正因DS和GBA模式切换引起的不能正常读写卡带存档的错误。<br>
+      <br>
+      　4.修正擦除卡带后的不正确的提示信息。<br>
+      <br>
+      　5.修正烧写卡带功能的一个错误，这个错误会引起烧写某些ROM出现数据错误。<br>
+      <br>
+      　6.增强刷新卡带时对以前版本软件烧录的卡带的检测，不再容易出错。<br>
+      <br>
+      　7.增强对DS个人制作的软件和一些DEMO的兼容性。<br>
+      <br>
+      　注：<br>
+      　1.因SMS数据格式改变，使用新软件前需要先备份SMS数据（用SMS存档管理功能单独备份存档），然后擦除卡带清除SMS数据后再使用新版本软件烧写卡带。 
+      <br>
+      <br>
+      　2.因512M卡带支持GBA/NDS混合烧录，如果进入过NDS的游戏后直接开关机进入GBA模式，必须在之前重新进入一次NDS模式的合卡菜单，使NDS游戏的存档自动备份，否则在GBA模式下将会提示上次进入过的NDS游戏的存档将会丢失。<br>
+      <hr>
+      <b>2005/8/26</b><br>
+      GBA Link配套软件5.00测试第1版　下载<br>
+      <br>
+      　1.支持NDS游戏。支持.NDS、.DS.GBA扩展名的ROM。<br>
+      <br>
+      　2.支持NDS游戏合卡。并且NDS游戏和GBA游戏可以混合烧录，在NDS上可以直接进入NDS或GBA游戏，在GBA上只能进入GBA游戏。<br>
+      <br>
+      　3.充分利用ZIPII系列卡带的4M存档空间，对DS游戏完美支持存档压缩管理，多个DS游戏的存档可以共存并且为压缩存储。<br>
+      <br>
+      　4.支持DS游戏的压缩功能，并且在DS上解压缩速度更快。ZIPII 512M卡带能够压缩256M的ROM。 <br>
+      <br>
+      　5.修正SRAM存档管理中删除最后一个存档时可能引起的错误。<br>
+      <br>
+      　6.修正512M卡带使用SMS功能时添加删除游戏引起的数据错乱。<br>
+      <br>
+      　7.修正合卡游戏进度备份与更新时可能出现的存档解压缩错误。 <br>
+      <br>
+      　8.内置的PCE模拟器更新为PCEAdvance 7.40。<br>
+      <br>
+      　9.增加8个ROM的金手指数据。<br>
+      <br>
+      　10.游戏中文名库更新到GBA:2100,DS:0091。 <br>
+      <br>
+      　注：<br>
+      　　1.NDS游戏功能目前仅能对ZIPII 512M卡带完美支持。非512M ZIP系列卡带可以烧单卡模式使用.NDS、.DS.GBA扩展名的ROM（个人制作的软件和一些DEMO）。新版本软件将逐步增强对非512M 
+      ZIP系列卡带的DS游戏支持，敬请期待。<br>
+      　　2.目前的软件对部分DS游戏可能存在兼容性问题，可以尝试使用单卡模式烧录解决，或等待新版本软件。<br>
+      　　3.如果你的卡带使用的是5.00测试第1版以前的版本软件烧录的游戏，请先用以前的版本备份游戏进度。并且卡带已经烧写有游戏，请用5.00测试第1版软件重新烧写，否则将不能使用刷新卡带功能和存档备份更新功能。<br>
+      <hr>
+      <b>2005/7/29</b><br>
+      GBA Link配套软件4.70测试第1版　下载<br>
+      <br>
+      　1.支持GBALink USB独立烧录器。<br>
+      <br>
+      　2.对GBALink USB独立烧录器支持自动刷新卡带功能，在插入卡带后会自动刷新出原卡带中游戏列表，拔下卡带后自动清空列表。<br>
+      <br>
+      　3.增加读取卡带功能。<br>
+      <br>
+      　4.修正对老64M卡带和一些改卡的检测问题。<br>
+      <br>
+      　5.修正对支持时钟ROM检测上的一个问题。<br>
+      <br>
+      　6.内置的NES模拟器更新为PocketNES 9.98(20050704)。<br>
+      <br>
+      　7.增加131个ROM的金手指数据。<br>
+      <br>
+      　8.游戏中文名库更新到2064。<br>
+      <hr>
+      <b></b><b>2005/5/5</b><br>
+      GBA Link配套软件4.60正式版　下载<br>
+      <br>
+      　1.修正对ZIPII 512M卡带烧写的ROM全部使用压缩，刷新卡带后添加ROM出现的金手指<br>
+      　　错乱问题。<br>
+      <br>
+      　2.不允许关闭装入金手指或压缩进度窗口，防止因关闭进度窗口出现的错误。<br>
+      <br>
+      　3.修正窗口切换时引起操作界面出现的一个小错误。<br>
+      <br>
+      　4.修正更换传输等待画面可能引起的连接失败，并且因传输等待画面有容量限制，建议<br>
+      　　不要使用画面过于复杂的图片。<br>
+      <br>
+      　5.内置的NES模拟器更新为PocketNES 9.98(20050508)。<br>
+      <br>
+      　6.游戏中文名库更新到1993。<br>
+      <hr>
+      <b>2005/5/5</b><br>
+      GBA Link配套软件4.60测试第1版　下载<br>
+      <br>
+      　1.增加支持<font color="#00FFFF">ZIPII 512M卡带</font>。<br>
+      <br>
+      　2.修正个性化界面PLAY LAST GAME和模拟器的图标错位的问题。<br>
+      <br>
+      　3.修正对ZIP系列卡带ROM列表直接添加有NES游戏烧写卡带后有可能出现的白屏问题。<br>
+      <br>
+      　4.一些其它小的调整。<br>
+      <br>
+      　5.内置的GB/GBC模拟器更新为GOOMBA 2.2版，NES模拟器更新为PocketNES 9.98。<br>
+      <br>
+      　6.增加12个ROM的金手指数据。<br>
+      <br>
+      　7.游戏中文名库更新到1988。<br>
+      <hr>
+      <b>2005/3/2</b><br>
+      GBA Link配套软件4.50正式版　下载<br>
+      <br>
+      　1.增加个性化界面的预览功能。这个功能需要使用GBA模拟器来预览，所以首先需要在“系统参数”中设置好模拟器，通常可以使用VisualBoyAdvance模拟器。<br>
+      <br>
+      　2.修正金手指无效的问题。<br>
+      <br>
+      　3.修正在“Play Last Game”项上不能使用SMS功能的问题。<br>
+      <br>
+      　4.修正智能烧写中的一个错误，这个错误会引起烧写的卡带中个别ROM出现不能解压或者死机。<br>
+      <br>
+      　5.内置的PCE模拟器更新为PCEAdvance7.3版。<br>
+      <br>
+      　6.增加1个ROM的金手指数据。<br>
+      <br>
+      　7.游戏中文名库更新到1919。<br>
+      <hr>
+      <b>2005/2/5</b><br>
+      GBA Link配套软件4.50测试第1版　下载<br>
+      <br>
+      　<font color="#FFFF00">1.<b>增加个性化界面功能</b>。</font><br>
+      <br>
+      　　(1).允许更换烧写等待画面、合卡菜单界面背景图、金手指界面背景图。<br>
+      <br>
+      　　(2).允许改变主菜单界面、SMS界面、金手指界面、解压缩界面、密码输入界面、时<br>
+      　　　　钟设置界面、错误窗口和提示窗口的各部分颜色，允许修改的设置项有73项。<br>
+      <br>
+      　　(3).允许更换区分ROM类型的图标。<br>
+      <br>
+      　　(4).各部分颜色均为真彩色设置(在GBA上显示时转换为32768色)，并且各部分的背<br>
+      　　　　景均可以设置为渐变色(各设置项的背景色1和背景色2)，使显示效果更加丰富。<br>
+      <br>
+      　　(5).装入的背景图和图标可以为任意大小，不是标准大小的图将自动缩放到240x160<br>
+      　　　　分辨率，图标将缩放到16x16分辨率。背景图和图标均支持BMP、JPG、ICO、<br>
+      　　　　WMF、EMF格式。　(ICO格式暂不支持缩放)<br>
+      <br>
+      　　(6).使用刷新卡带功能可以随意修改已经烧写过内容卡带的界面。<br>
+      <br>
+      　　(7).个性化界面设置可以保存为独立的界面文件（.skn扩展名），方便用户互相交<br>
+      　　　　流。 
+      <p> 　　注：个性化界面功能支持ZIP、ZIPII系列卡带，对128M专用合卡和普通卡带无效。</p>
+      <p>　2.烧录软件增加2个界面效果:RealOne,MSN。并且界面各控件位置根据不同的界面效果自动调整对齐，更加整齐美观。<br>
+        <br>
+        　3.内置的GB/GBC模拟器更新为Goomba 2.1版、PCE模拟器更新为PCEAdvance7.2版。<br>
+        <br>
+        　4.增加26个ROM的金手指数据。<br>
+        <br>
+        　5.游戏中文名库更新到1877。<br>
+        <br>
+        　6.修正对ZIP系列卡带添加单个超出卡带容量ROM出现的ROM列表显示错误。<br>
+        <br>
+        　7.修正对选择ZIP2 128M卡带时，使用ZIP 128M卡带还正常烧写的问题。<br>
+        <br>
+        　8.修正“擦除卡带”功能中的一个错误，这个错误会引起用ZIP2系列卡带使用“烧写卡带 ”功能烧写后的数据不正确，但使用“智能烧写”功能没有问题。<br>
+        <br>
+        　9.修正对个别ROM存档补丁检测上的问题。<br>
+        <br>
+        注意：<br>
+        1.如果你的卡带使用的是4.50测试第1版以前的版本软件烧录的游戏，请先用以前的版本备份游戏进度。并且卡带已经烧写有游戏，请用4.50测试第1版软件重新烧写，否则将不能使用刷新卡带功能和存档备份更新功能</p>
+              <hr>
+      <b>2004/12/13</b><br>
+      GBALink配套软件金手指数据和游戏中文名库更新　<a href="#">下载</a><br>
+      <br>
+      　1.游戏中文名库更新到1838。<br>
+      <br>
+      　2.增加43个ROM的金手指数据。这些金手指数据均从网上收集整理，感谢制作金手指数据的朋友。<br>
+      <br>
+      安装方法：<br>
+      ·安装前请关闭烧录软件<br>
+      ·将压缩包的所有文件解到GBALINK软件安装目录，比如C:\Program Files\GBALink<br>
+      ·运行烧录软件，软件会提示正在更新金手指文件索引<br>
+      ·在此后运行烧录软件时，即可正常为有对应金手指的ROM启用金手指<br>
+      <hr>
+      <b>2004/10/19</b><br>
+      GBA Link配套软件4.42正式版　<a href="#">下载</a><br>
+      <br>
+      　1.增强不同软件版本之间刷新卡带和存档备份的兼容性，只要新版本软件不出现结构性的修改就可以对老版本软件烧写的卡带进行刷新或备份存档。4.42正式版就可以对4.40以后版本烧写的卡带刷新卡带或备份存档。<br>
+      <br>
+      　2.在合卡菜单中增加软件版本号显示。<br>
+      <br>
+      　3.修正在一些情况刷新卡带后烧写的卡带出错的问题。<br>
+      <br>
+      　4.游戏中文名库更新到1715。<br>
+      <hr>
+      <b>2004/10/15</b><br>
+      GBA Link配套软件4.41正式版　下载<br>
+      <br>
+      　1.在上传GBA或烧写卡带的右键菜单中加入启动GBA的功能。 <br>
+      <br>
+      　2.修正在一种特殊情况刷新卡带后，添加新ROM然后烧写卡带出现无法进入合卡菜单的问题。<br>
+      <br>
+      　3.修正在某些情况刷新卡带出错的问题。<br>
+      <br>
+      　4.修正对没有启用金手指的ROM刷新后启用金手指可能出现金手指无效的问题。<br>
+      <br>
+      　5.修正ZIP2卡带SMS数据存储太满有可能引起的卡带中第1个游戏无法进入问题。<br>
+      <br>
+      　6.修正GBA上存档管理功能中的一个错误，这个错误在存档数据过多时引起数据错乱，并且会出现无法进入游戏。<br>
+      <br>
+      　7.游戏中文名库更新到1711。<br>
+      <br>
+      注意：<br>
+      1.如果你的卡带使用的是4.41正式版以前的版本软件烧录的游戏，请先用以前的版本备份游戏进度。并且卡带已经烧写有游戏，请用4.41正式版软件重新烧写，否则将不能使用刷新卡带功能和存档备份更新功能。<br>
+      <hr>
+      <b>2004/10/11</b><br>
+      GBA Link配套软件4.40正式版　下载<br>
+      <br>
+      　1.改进压缩系统，高等级模式增强压缩比，解压缩速度保持和4.35版相同，比如新约圣剑传说汉化版原4.35版压缩后为76M，现在压缩后为74M，解压缩速度还为24秒左右。低等级模式增强解压缩速度，压缩比稍低，但也比4.40测试第2版有所提高，比如新约圣剑传说汉化版原4.40测试第2版压缩后为80M，现在压缩后为79M，解压缩速度为21秒左右。 
+      <br>
+      <br>
+      　2.对GOOMBA2.0、POCKETNES v9.97、PCEADVANCE v6.9支持软复位功能，这样也意味使用添加特殊ROM功能添加这些模拟器游戏合集也支持软复位。<br>
+      <br>
+      　3.在系统参数中增加“烧写卡带后自动进入合卡菜单”的选项，不选中时烧写完卡带不会自动进入合卡菜单。<br>
+      <br>
+      　4.修正添加ROM时的卡带容量计算错误，引起卡带容量变成负数的问题。<br>
+      <br>
+      　5.修正有时候使用刷新卡带功能软件出现错误的问题。<br>
+      <br>
+      　6.游戏中文名库更新到1701。<br>
+      <br>
+      注意：<br>
+      1.如果你的卡带使用的是4.40正式版以前的版本软件烧录的游戏，请先用以前的版本备份游戏进度。并且卡带已经烧写有游戏，请用4.40正式版软件重新烧写，否则将不能使用刷新卡带功能和存档备份更新功能。<br>
+      <hr>
+      <b>2004/9/30</b><br>
+      GBA Link配套软件4.40测试第2版　下载<br>
+      <br>
+      　1.<b><font color="#FFFF00">进一步提升压缩ROM在GBA上的解压缩速度，现在的速度大约是以前的120%</font></b>，也就是提高了大约20%。这样解压缩64M的黄金太阳是10秒，解压缩128M的新约圣剑传说汉化版是21秒，解压缩128M的续·我们的太阳是18秒。 
+      <br>
+      <br>
+      　2.<b><font color="#FFFF00">增加138个ROM的金手指数据</font></b>，这样GBALink烧录系统已经可以对1497个ROM支持金手指功能了。 
+      <br>
+      <br>
+      　3.游戏中文名库更新到1678。 <br>
+      <br>
+      注意：<br>
+      1.如果你的卡带使用的是4.40测试第2版以前的版本软件烧录的游戏，请先用以前的版本备份游戏进度。并且卡带已经烧写有游戏，请用4.40测试第2版软件重新烧写，否则将不能使用刷新卡带功能和存档备份更新功能。<br>
+      <hr>
+      <b>2004/9/29</b><br>
+      GBA Link配套软件4.40测试第1版　下载<br>
+      <br>
+      　1.更换<b><font color="#FFFF00">新软复位金手指系统</font></b>。<br>
+      <br>
+      　　(1).<font color="#00FFFF">兼容性比以前更好</font>，更多的ROM支持软复位和金手指功能。<br>
+      <br>
+      　　(2).新系统不需要调用BOMA，<font color="#00FFFF">对ROM处理的速度极快</font>。<br>
+      <br>
+      　　(3).<font color="#00FFFF">无论ROM有什么样的片头，新系统都可以正确识别</font>，所以取消了以前的“手动软复<br>
+      　　　　位”功能，使软件操作更加方便。 <br>
+      <br>
+      　　　　这次更换新软复位金手指系统，增强了兼容性，并使软件操作更方便，为以后实现<br>
+      　　在游戏中随时更改金手指状态和及时存档功能奠定了良好基础。 <br>
+      <br>
+      　2.在添加ROM时允许直接加入金手指。这样对于需要压缩的ROM，就不需要因要在ROM属性中启用金手指而对ROM压缩2遍了。<br>
+      <br>
+      　3.<b><font color="#FFFF00">自己定义软复位、游戏复位、金手指开关热键</font></b>。<br>
+      <br>
+      　4.修正使用刷新卡带删除ROM后可能会引起的游戏无法进入的问题。<br>
+      <br>
+      　5.修正拖放到上传GBA的ROM打不开。<br>
+      <br>
+      　6.修正1653的存档补丁问题。<br>
+      <br>
+      　7.内置的模拟器更新为：(FC/NES)POCKETNES v9.97,(GB/GBC)GOOMBA v2.0,(PCE)PC-<br>
+      EADVANCE v6.9。并且POCKETNES模拟器的文件名改为pocketnes.gba,不再为ediy.gba，当自己升级这个模拟器时需要覆盖pocketnes.gba这个文件，而用来完成GBA+FC合卡的POCKETNES模拟器的文件名改为EDIY.GBA。 
+      <p> 　8.游戏中文名库更新到1670。<br>
+        <br>
+        注意：<br>
+        　如果你的卡带使用的是4.40测试第1版以前的版本软件烧录的游戏，请先用以前的版本备份游戏进度。并且卡带已经烧写有游戏，请用4.40测试第1版软件重新烧写，否则将不能使用刷新卡带功能和存档备份更新功能。</p>
+              <hr>
+      <b>2004/8/18</b><br>
+      GBA Link配套软件4.35正式版　下载<br>
+      <br>
+      　1.修正有时候烧写带金手指的ROM后，游戏无法进入的错误。<br>
+      <br>
+      　2.修正对洛克人4.5存档识别的错误。<br>
+      <br>
+      　3.修正保存ROM列表中的一个错误。<br>
+      <br>
+      　4.游戏中文名库更新到1627。<br>
+      <br>
+      　5.更新了繁体中文的游戏名库，<a href="#">这里下载</a>。 <br>
+      <hr>
+      <b>2004/8/11</b><br>
+      GBA Link配套软件4.35测试第1版　下载<br>
+      <br>
+      　1.<b><font color="#FFFF00">增加手动软复位功能，</font></b>这项功能可以让有片头或有汉化模块的游戏使用软复位和金手指功能功能<b><font color="#FFFF00">。</font></b>使用手动功能, 
+      需要在压缩或烧写带软复位游戏出现游戏窗口时,手动操作游戏到标题画面,然后按 ESC键关闭窗口。<br>
+      <br>
+      　2<b><font color="#FFFF00">.增加IPS补丁功能</font></b>，这个功能对普通卡带、128M专用合卡、ZIP系列卡带、ZIP2系列卡带都有效。这样对于普通卡带如果使用金手指IPS补丁，就<b><font color="#FFFF00">可以对普通卡带增加金手指功能</font></b>。<br>
+      <br>
+      　3.优化数据量很大的金手指处理速度，不会象以前出现象死机一样的情况。<br>
+      <br>
+      　4.对普通卡带修正对部分芯片检测和烧写上出现的错误。<br>
+      <br>
+      　5.修正自定义传输等待画面功能中的一个错误，不会出现更换某些特定的画面后出现GBA端程序出错的情况。<br>
+      <br>
+      　6.游戏中文名库更新到1624。 <br>
+      <br>
+      　7.更新了繁体中文的游戏名库，<a href="#">这里下载</a>。<br>
+      <br>
+      <hr noshade="">
+      <b>注意：</b><br>
+      　因为4.30版以后的软件SMS功能加强了数据校验，修改了数据格式，所以烧写卡带之前，如果你的卡带中有4.30版以前软件生成的SMS数据，需要使用“卡带SMS数据管理”功能把卡带中的SMS存档逐个单独备份出来，烧写卡带后再添加进去。<br>
+      <br>
+      <b>对ZIP II卡带，口袋时钟正确设置方法如下：</b><br>
+      　第1次进入游戏，在游戏中设置时钟为AM00:00，存档，重新开关GBA。然后可以使用PC端软件的“卡带时钟同步”功能或在合卡菜单中按R+B键把时钟调整为正确时间，然后进入游戏，时钟就和正确时间同步了。<br>
+      <hr>
+      <b>2004/8/1</b><br>
+      GBA Link配套软件4.30测试第1版　下载<br>
+      <br>
+      　1.<b><font color="#FFFF00">支持ZIP2系列卡带</font></b>，卡带类型选择中增加ZIP2 128,ZIP2 
+      256卡带类型。<br>
+      <br>
+      　2.对ZIP2系列卡带，合卡菜单中可以显示和调整时钟。<br>
+      <br>
+      　3.对ZIP2系列卡带，增加电脑和卡带时钟同步功能。<br>
+      <br>
+      　4.对ZIP2系列卡带，ROM参数中可以选择当前ROM是否使用时钟。<br>
+      <br>
+      　5.<b><font color="#FFFF00">时钟功能完美支持口袋妖怪系列和我的太阳系列</font></b>，并且烧写我的太阳可以自动增加按L键＋左右方向键调节太阳光强度功能。 
+      <br>
+      <br>
+      　6.支持拖放方式加载ROM。<br>
+      <br>
+      　7.修正并增强检测普通卡带功能。<br>
+      <br>
+      　8.在添加ROM的信息栏增加卡带剩余空间显示。<br>
+      <br>
+      　9.是否压缩ROM的提示窗中显示当前要压缩的ROM的大小。<br>
+      <br>
+      　10.增加2种界面风格mp10和Longhorn。<br>
+      <br>
+      　11.SMS功能加强数据校验，防止数据错误引起的死机情况。<br>
+      <br>
+      　12.修正删除游戏后，使用GBA上存档管理功能出现的错误。<br>
+      <br>
+      　13.内置的PCEADVANCE模拟器更新为6.7版。<br>
+      <br>
+      　14.内置的GOOMBA(GB)模拟器更新为1.9版。<br>
+      <br>
+      　15.ROM中文名库增加到1599。<br>
+      <br>
+      　16.<font color="#FFFF00"><b>增加388个金手指文件</b></font>。<br>
+      <br>
+      　17.更新了繁体中文的游戏名库，<a href="#">这里下载</a>。<br>
+      <br>
+      注意：<br>
+      　1.如果你的卡带使用的是4.30测试第1版以前的版本软件烧录的游戏，请先用以前的版本备份游戏进度。并且卡带已经烧写有游戏，请用4.30测试第1版软件重新烧写，否则将不能使用刷新卡带功能和存档备份更新功能。<br>
+      <br>
+      　2.因为SMS功能加强了数据校验，修改了数据格式，所以烧写卡带之前，需要使用“卡带SMS数据管理”功能把卡带中的SMS存档逐个单独备份出来，烧写卡带后再添加进去。<br>
+      <hr>
+      <b></b><b>2004/7/1</b><br>
+      GBA Link配套软件4.20正式版　下载<br>
+      <br>
+      　1.正式支持GBALink USB烧录器。使用优化烧写算法，使GBALink USB烧录器烧写ZIP系列卡带速度成倍提高，烧写数据越多提升越明显，烧写满容量256M数据仅需要4分26秒。<br>
+      <br>
+      　2.内置的PCEADVANCE模拟器更新为6.6版。<br>
+      <br>
+      　3.增加18个金手指文件。<br>
+      <br>
+      　4.ROM中文名库增加到1554。<br>
+      <br>
+      　5.更新了繁体中文的游戏名库，<a href="#">这里下载</a>。<br>
+      <br>
+      　<a href="#">GBALink USB烧录器驱动程序下载</a>及<a href="#">驱动程序安装详解</a>。 
+      <br>
+      <hr>
+      <b>2004/6/4</b><br>
+      GBA Link配套软件4.20测试第1版　下载<br>
+      <br>
+      　1.优化代码，<b><font color="#FFFF00">在GBA上ROM解压缩速度提升250%</font></b>，32M的玛丽2解压缩时间是5秒！64M的黄金太阳解压缩时间是12秒！<br>
+      <br>
+      　2.优化代码，提高烧写速度和稳定性，如果你的I/O延迟设置值大于0可尝试设置为0。<br>
+      <br>
+      　3.修正软件能打开多个的错误。<br>
+      <br>
+      　4.修正计算SMS存档剩余空间是否够用上的一个错误。<br>
+      <br>
+      　5.修正在普通卡带类型时自动检测卡带设置的卡带类型无效的错误。<br>
+      <br>
+      　6.内置的PCEADVANCE模拟器更新为6.5版。<br>
+      <br>
+      　7.内置的DRSMS模拟器更新为6.00版。<br>
+      <br>
+      　8.增加59个金手指文件。<br>
+      <br>
+      　9.ROM中文名库增加到1511。<br>
+      <br>
+      　10.更新了繁体中文的游戏名库，<a href="#">这里下载</a>。 <br>
+      <hr>
+      <b>2004/4/9</b><br>
+      GBA Link配套软件4.10测试第2版　下载<br>
+      <br>
+      　1.修正某些情况下烧写完成后提示连接失败的错误。<br>
+      <br>
+      　2.修正电脑上“卡带SMS数据管理”功能的一些错误。<br>
+      <br>
+      　3.修正在0:00点左右烧写卡带时烧录时间和速度显示上的错误。<br>
+      <br>
+      　4.修正存档压缩功能的一些错误。<br>
+      <br>
+      　5.修正对Play Last Game项使用L+A键不能进入游戏的错误。 <br>
+      <br>
+      　6.当添加ROM出现卡带空间不足提示错误时，提示当前添加的ROM的容量。<br>
+      <br>
+      　7.因在游戏中开关金手指的热键容易按成软复位热键，所以打开金手指的热键修改为START+L+ R,关闭金手指的热键修改为SELECT+L+R。<br>
+      <br>
+      　8.ROM中文名库增加到1452。 <br>
+      <hr>
+      <b>2004/4/4</b><br>
+      GBA Link配套软件4.10测试第1版　下载<br>
+      <br>
+      <font color="#FFFF00"><b>　1.支持存档压缩功能</b></font><br>
+      <br>
+      　　对存档进行压缩，使存档占用的空间大为减小。2M的SRAM存档空间可以同时支持一百多个游戏的存档。这个功能是与ZIP压缩功能相对应的，ZIP压缩功能可以写入更多的游戏，存档压缩功能保证更多的游戏都有存档空间。 
+      <br>
+      <br>
+      　　(1).在GBA上支持压缩格式存档的管理功能（查看和删除）。<br>
+      <br>
+      　　(2).电脑上的合卡游戏进度的备份和更新支持压缩格式的存档并允许删除存档操作。<br>
+      <br>
+      　　(3).存档的压缩备份和切换由GBA上的软件自动完成，但如果进入游戏时因存档备份区空间不足引起不能保存上一个游戏的存档，用户可以选择是否放弃前一个游戏的存档进入游戏或者取消返回合卡菜单，然后可以删除不需要的存档或用SMS功能备份后删除腾出需要的空间。<br>
+      <br>
+      　　(4).该功能只支持ZIP系列卡带。<br>
+      <br>
+      　<b><font color="#FFFF00">2.支持在电脑上SMS存档管理功能</font></b>，在电脑上对卡带的SMS数据进行备份、添加、删除、全删除操作。<br>
+      <br>
+      　3.支持在电脑上对卡带SMS数据整体备份、恢复功能。<br>
+      <br>
+      　<b><font color="#FFFF00">4.开展金手指补完计划的第一步成果：增加171个金手指文件。</font></b>金手指数据正在陆续补完中...<br>
+      <br>
+      　5.支持口袋叶绿，口袋火红的存档。<br>
+      <br>
+      　6.支持手动设置并口地址，这样对于一些PCI接口的并口扩展卡可以支持了。<br>
+      <br>
+      　7.改善连续功能操作的可靠性，连续功能操作时不再容易出现连接失败。<br>
+      <br>
+      　<font color="#FFFF00"><b>8.支持更换传输等待界面的背景图片，并支持调整图片的色彩饱和度。</b></font>目前支持BMP格式，大小为240x160。<br>
+      <br>
+      　9.增加L+A键“冷启动”方式进入游戏，这样可以解决个别游戏不能用A键进入的问题。但L+A键进入时不能使用金手指功能，将直接跳过金手指选择界面。<br>
+      <br>
+      　10.软复位修改为“冷启动”方式，保证软复位的可靠性，解决了一些游戏软复位次数过多引起游戏死机的问题。<br>
+      <br>
+      　11.在GBA上的金手指界面增加L+R键返回合卡菜单功能。<br>
+      <br>
+      　12.在GBA上的金手指界面增加“Cheat Initial State（全局金手指初始状态）”的选择，这样解决了一些必须在游戏中才能打开的金手指引起游戏死机的问题。注意，默认初始状态是OFF（关闭），在游戏中如果要使用金手指时用SELECT+START+R键启用金手指。<br>
+      <br>
+      　13.对PocketNES、GOOMBA、PCEAdvance生成的ROM用BOMA1.2版补丁。(因为BOMA1.2对于一些游戏补丁错误，所以未全面升级为1.2版)<br>
+      <br>
+      　14.内置的PCEAdvance模拟器升级为6.2版。<br>
+      <br>
+      　15.因ZIP系列卡带增加支持存档压缩功能，对未知存档类型的ROM均默认设置存档为512K，解决一些新ROM的存档支持问题（比如图书仔II）。<br>
+      <br>
+      　16.修正对于个别ROM合卡后容量计算错误。<br>
+      <br>
+      　17.修正生成SEGA SMS ROM合集时的错误，SMS游戏可以正确运行了。<br>
+      <br>
+      　18.修正ROM名列表中的“大战争”被自动识别为“大战争2-黑洞的升起”。<br>
+      <br>
+      　19.修正对于手动选择特殊卡带类型时的错误。<br>
+      <br>
+      　20.ROM中文名库增加到1444。<br>
+      <br>
+      　21.更新了繁体中文的游戏名库，<a href="#">这里下载</a>。<br>
+      　　使用时请把这个文件romname.lst复制到安装好的GBALink软件的目录下，覆盖相同文件名的文件，这样在GBA的游戏选择菜单上即可显示繁体中文游戏名了。<br>
+      　　注：在电脑的繁体操作系统上中文游戏名显示乱码是正常的，不会影响GBA上的显示效果。<br>
+      <hr>
+      <b>2004/2/9</b><br>
+      GBA Link配套软件4.00正式版　下载<br>
+      <br>
+      　1.修正使用添加特殊ROM功能时，因ROM容量太满后添加不上，引起最后一个已经添加的ROM的ROM名变化的错误。<br>
+      <br>
+      　2.修正有时候烧写卡带时传输进度条消失的错误。<br>
+      <br>
+      　3.增加3个金手指文件。<br>
+      <br>
+      　4.ROM中文名库增加到1372。<br>
+      <br>
+      　5.提供繁体中文的游戏名库，<a href="#">这里下载</a>。<br>
+      　　使用时请把这个文件romname.lst复制到安装好的GBALink软件的目录下，覆盖相同文件名的文件，这样在GBA的游戏选择菜单上即可显示繁体中文游戏名了。<br>
+      　　注：在电脑的繁体操作系统上中文游戏名显示乱码是正常的，不会影响GBA上的显示效果。<br>
+      <br>
+      　6.提供DRSMS模拟器的4.00版(最新的DRSMS模拟器是5.00版，但这个4.00版对某些游戏可能兼容性更好）。<a href="#">这里下载</a>。<br>
+      　　如果你需要使用这个4.00版时，请把这个文件drsms.gba复制到安装好的GBALink软件的目录下，覆盖相同文件名的文件即可。<br>
+      <hr>
+      <b>2004/1/20</b><br>
+      GBA Link配套软件4.00测试第2版　下载<br>
+      <br>
+      　1.修正在GBA上使用SMS功能时用B键返回时主菜单显示上的错误。<br>
+      <br>
+      　2.内置的PCEADVANCE模拟器升级为5.5版。
+<hr>
+      <b>2004/1/19</b><br>
+      GBA Link配套软件4.00测试第1版　下载<br>
+      <br>
+      <b>一、首创超级记忆系统（SUPER MEMORY SYSTEM，缩写为SMS）</b><br>
+      <br>
+      　　全新<font color="#FFFFFF">存档压缩、备份</font>系统，给你<font color="#00FFFF">海量存档</font>，保证<font color="#00FFFF">永不丢失</font>。<br>
+      <br>
+      　　无需购买新的FLASH卡带，通过软件方式即可通过在GBA上的操作将存档数据备份到卡带的FLASH区，保证存档数据永不丢失。<font color="#00FFFF">相当于免费送你一个超大容量记忆棒。</font><br>
+      <br>
+      　　<font color="#00FFFF">独创存档压缩技术</font>，可将存档压缩后备份到卡带的FLASH区，最多可备份128个游戏的存档，仅仅占用192K空间。 
+      <br>
+      <br>
+      　　注：该项功能仅对ZIP系列卡带有效。<br>
+      <br>
+      <b>二、直接支持各种特殊ROM</b><br>
+      <br>
+      　　NES\GB\GBC\PCE\GG\SMS 各种各样ROM，通通玩的转。<br>
+      <br>
+      　　新增直接支持多种模拟器ROM，包括NES\GB\GBC\PCE\GG\SMS。<font color="#00FFFF">其中GG\SMS更是独家支持，让你抢先体验世嘉游戏带来的快感。</font><br>
+      <br>
+      　　利用GBALink的ZIP系列卡带压缩特性，<font color="#00FFFF">更可以直接将这些模拟器ROM压缩后写入卡带</font>，占用空间极小，能够容纳更多游戏。 
+      <br>
+      <br>
+      <b>三、软件界面可换</b><br>
+      <br>
+      　　GBALink软件界面可以更换，二十多种风格任你随意选择。<br>
+      <br>
+      <font size="2"><b><br>
+      GBALink4.0版软件其它更新内容如下：</b></font><br>
+      <br>
+      　1.更改语言包格式，增加切换字符集和字体切换。<br>
+      <br>
+      　2.修正有些游戏名中出现文件名不允许出现的非法字符引起不能备份和更新存档的错误。<br>
+      <br>
+      　3.修正当烧写满容量的128MROM时自动去除合卡菜单时的错误，引起256MZIP卡带单独烧写个别ROM不能使用金手指的错误（比如：1245）。<br>
+      <br>
+      　4.修正当只添加带软复位或金手指的压缩游戏时，不提示软复位金手指警告。<br>
+      <br>
+      　5.修正对直接添加的NES游戏设置的存档大小错误，引起烧写后备份和更新存档大小只有8K。<br>
+      <br>
+      　6.修正按照一种特殊顺序烧写带金手指的游戏出现不显示金手指界面的问题。<br>
+      <br>
+      　7.在GBA上解压缩进度改变为进度条显示方式，密码输入和解压缩界面变为窗口方式。<br>
+      <br>
+      　8.优化合卡菜单，容量更小。不使用SMS功能容量比以前减小25%，即使使用SMS功能也和以前持平。<br>
+      <br>
+      　9.因ZIP压缩方式比专用压缩方式的实用性相差太远，所以取消ZIP压缩方式，请大家使用专用压缩方式。<br>
+      <br>
+      　10.增加50个金手指文件（1301-1350）。<br>
+      <br>
+      　11.ROM中文名库增加到1352。<br>
+      <hr>
+      <b>2003/12/21</b><br>
+      GBA Link配套软件3.61版 下载<br>
+      <br>
+      　1.改进ZIP卡带和VBA模拟器存档的互换兼容性。更新存档功能允许更新模拟器生成的非标准大小的存档文件，这样对于一些模拟器生成的EEPROM格式的存档可以直接更新入卡带内使用。并且备份卡带存档功能备份的EEPROM格式的存档也可以直接使用在模拟器上。<br>
+      <br>
+      　2.修正一个卡带检测提示上的错误。<br>
+      <br>
+      　3.修正有时候烧写完成后，GBA没有自动进入游戏的错误。<br>
+      <br>
+      　4.增加1个金手指文件(Max Payne)。<br>
+      <br>
+      　5.ROM中文名库增加到1336。
+<hr>
+      <b>2003/12/19</b><br>
+      GBA Link配套软件3.60正式版 下载<br>
+      <br>
+      　1.增加256M ZIP_SE FLASH卡带的支持（该卡带支持128M超大压缩空间）。<br>
+      <br>
+      　2.改变刷新卡带后修改金手指属性的规则。<br>
+      　　新规则如下：<br>
+      　　----------------<br>
+      　　　　原卡带烧写的不压缩游戏启用了金手指功能，在刷新卡带后可以关闭、启用、修改<br>
+      　　这个游戏的金手指。并且只要原来卡带里不压缩的游戏启用了软复位功能，刷新卡带后<br>
+      　　这个游戏就可以启用金手指功能。<br>
+      　　　　但原来卡带里没有使用软复位或金手指功能的游戏，刷新卡带后将不能启用金手指<br>
+      　　功能。另外对于压缩的游戏刷新卡带后不能修改金手指属性。<br>
+      　　---------------- <br>
+      　　这项改动可能引起刷新以前版本软件烧写的卡带时出错，遇到这种情况用新版本软件重新烧写卡带即可。<br>
+      <br>
+      　3.改善在低内存低配置电脑上出现连接失败不能正常烧写卡带的情况。<br>
+      <br>
+      　4.修正按某种顺序烧写带金手指功能的游戏进入游戏后金手指无效的错误。<br>
+      <br>
+      　5.因某XXFLASH烧录软件直接盗用GBALink的游戏名库！所以改变ROM名的提取方式。用户如果自己添加新游戏的中文游戏名，需要提取ROM名时，请在ROM属性编辑窗口中的游戏名下拉框上点击鼠标右键，在弹出的菜单中选择“复制ROM名到剪贴板”即可。<br>
+      <br>
+      　6.ROM中文名库增加到1332。<br>
+      <br>
+      　7.增加12个金手指文件。<br>
+      <br>
+      　8.一些其它错误的修正。<br>
+      <br>
+      　9.提供繁体中文的游戏名库，<a href="#">这里下载</a>。<br>
+      　　使用时请把这个文件romname.lst复制到安装好的GBALink软件的目录下，覆盖相同文件名的文件，这样在GBA的游戏选择菜单上即可显示繁体中文游戏名了。<br>
+      　　注：在电脑的繁体操作系统上中文游戏名显示乱码是正常的，不会影响GBA上的显示效果。
+<hr>
+      <b>2003/11/24</b><br>
+      GBA Link配套软件3.60测试第4版 下载<br>
+      <br>
+      　1.修正修改ROM属性后可能丢失存档属性的的错误。<br>
+      　2.修正金手指数据处理中的一个错误，这个错误可能引起刷新卡带时软件报错，并且可<br>
+      　　能引起一些游戏在使用金手指时死机。<br>
+      　3.修正对金手指中一种数据格式的处理方法。<br>
+      　4.修正刷新卡带时如果没有TEMP目录时出现的错误。<br>
+      　5.可以识别并处理重复游戏名的金手指文件。<br>
+      　6.ROM中文名库增加到1300。<br>
+      　7.增加6个金手指文件。 
+      <hr>
+      <b>2003/11/24</b><br>
+      GBA Link配套软件3.60测试第3版 下载<br>
+      <br>
+      　1.修正使用刷新卡带功能时出现的错误。
+<hr>
+      <b>2003/11/24</b><br>
+      GBA Link配套软件3.60测试第2版 下载<br>
+      <br>
+      　1.增强对格式不标准的金手指文件的处理能力，这样软件在加载个别金手指时将不再出错。<br>
+      <br>
+      　　另外本软件的金手指文件均为网上收集整理的，由于这些金手指文件存在格式不规范或者格式错误的情况，对于格式错误的金手指可能会引起游戏死机或者存档丢失等情况。<br>
+      　　需要提醒大家注意的是，这并不是3.60版软件的问题。关于这个问题，我们今后有发现的，会对金手指文件做出修正，用户也可自行修正有格式错误的金手指文件。 
+      <hr>
+      <b>2003/11/23</b><br>
+      GBA Link配套软件3.60测试第1版 下载<br>
+      <br>
+      　<font color="#FFFF00">1.增加金手指功能</font><br>
+      <br>
+      　　这次开发的金手指功能，无论从功能上、操作界面上、支持的游戏的数量上都超过市面上的金手指卡，GBALink的金手指功能的部分特点如下： <br>
+      <br>
+      　　(1).<b>金手指功能使用方便。</b>用户无需计算机，无需重新烧写，就可以在GBA上随意选<br>
+      　　　　择使用金手指的各项功能。<br>
+      <br>
+      　　(2).<b>金手指和ROM自动对应。</b>添加某个ROM时，软件会自动调用对应的金手指文件，<br>
+      　　　　无需在几百个文件中手动选择。对于没有自动对应的ROM可以使用金手指编辑界面<br>
+      　　　　上的“更多”功能来手动选择。<br>
+      <br>
+      　　(3).<b>新游戏的金手指文件更新方便。无需等待软件更新</b>，对于新推出的游戏，用户　　　　可随时把网上或其它地方找到的金手指文件复制到软件对应目录下使用。当添加了<br>
+      　　　　新的金手指文件时，打开GBAlink软件将自动重建金手指的索引文件，如果出现重<br>
+      　　　　建索引失败，请检查新加的金手指文件的格式是否正确。<br>
+      <br>
+      　　(4).<b>在GBA上金手指选择界面可显示英文、简体中文、繁体中文和日文，查看方<br>
+      　　　　便。</b><br>
+      <br>
+      　　(5).<b>与金手指卡相比，在GBA上选择金手指功能时，可以支持更多的选项</b>，每个<br>
+      　　　　选项下可支持多个值，比如一些RPG游戏中的道具、武器等，功能更强大。<br>
+      <br>
+      　　(6).<b>金手指功能和软复位功能有机配合</b>，在软复位后保存上次选择的金手指状态<br>
+      　　　　（对于压缩的游戏也有效），再次进入游戏方便重新修改金手指状态。<br>
+      <br>
+      　　(7).<b>在游戏中可以随时开关金手指</b>。使用START+SELECT+L:打开金手指，<br>
+      　　　　START+SELECT+R:关闭金手指，并且打开或关闭时GBA画面有暂时白屏提示（对于<br>
+      　　　　部分游戏白屏提示功能无效，但开关金手指功能正常）。<br>
+      <br>
+      　　(8).<b>原卡带烧写的游戏启用了金手指功能，在刷新卡带后可以关闭、启用、修改<br>
+      　　　　这个游戏的金手指</b>。并且对于原卡带只要有一个游戏启用金手指，其它只启用软<br>
+      　　　　复位的游戏在刷新后也可以启用这个游戏的金手指。但原来卡带烧写的游戏没有一<br>
+      　　　　个启金手指，刷新后将不能启用金手指功能。<br>
+      <br>
+      　　(9).<b>在进入游戏前选择金手指时可以快速打开和关闭全部金手指</b>：SELECT+A打开<br>
+      　　　　全部金手指，SELECT+B关闭全部金手指。<br>
+      <br>
+      　　(10).<b>GBALink的金手指数据采用的是国内流行的CHT格式(EmuCheat)</b>，金手指<br>
+      　　　　数据来源充足，并且方便增强新游戏的金手指。<br>
+      <br>
+      　　(11).<b>在PC上可以编辑金手指</b>，并且增加金手指功能可增加8、16、32位的数据。<br>
+      <br>
+      　　(12).打开软件后第1次烧写带软复位或金手指的ROM时将弹出窗口提示软复位和金手指<br>
+      　　　　功能使用上的注意事项。 <br>
+      <br>
+      　<b>注：</b><br>
+      　　(1).金手指的功能项和设置项数量是有限制的。功能项最大32项，设置项最大15项。<br>
+      　　　　在金手指编辑界面对于设置项超出限制的项目显示为红色，用户可以双击该功能<br>
+      　　　　项来选择设置项中的15个值，如果没有选择，在烧写到卡带上时将自动截取前<br>
+      　　　　15项。对于功能项超出32项的，可以使用金手指的“删除”功能把来选择其中的<br>
+      　　　　32项，如果在退出ROM编辑时还是超出32项，将出现提示，并且在烧写到卡带上时<br>
+      　　　　将自动截取前32项。 <br>
+      <br>
+      　　(2).金手指功能是要利用ZIP卡的特性，所以金手指功能只能使用在ZIP卡上。 <br>
+      <br>
+      　　(3).本软件包含的6XX个金手指数据均为从网上收集整理的，感谢制作金手指的各位朋<br>
+      　　　　友。 <br>
+      <br>
+      <br>
+      　2.对不同的连接失败增加不同的建议处理方法提示。<br>
+      <br>
+      　3.增加卡带密码功能，在“系统参数”中设置卡带密码。<br>
+      <br>
+      　4.合卡菜单在切换画面时增加淡入淡出效果。<br>
+      <br>
+      　5.使用GBK大字符集字库，这样在GBA上可以显示英文、简体中文、繁体中文和日文字符（繁体中文和日文字符目前需要用户自行转内码）。<br>
+      <br>
+      　6.加入POCKETNES9.8,并且POCKETNES的EXIT功能可以返回合卡菜单。<br>
+      <br>
+      　7.改进ROM名提取方式，对于自动替换游戏中文名功能和自动对于金手指功能中用到的 ROM名增加4字节ROM代码，这样更加精确的对应ROM。<br>
+      <br>
+      　8.改进GBA端验证密码时的方法，在GBA端验证密码时校验密码长度，更加可靠。<br>
+      <br>
+      　9.对于ReadBoy、PictureBoy等生成的ROM自动把文件名追加到ROM名后(只追加文件名，没有扩展名)。<br>
+      <br>
+      　10.识别PocketGB、goomba10、图书仔1.35生成的ROM，并相应调整存档空间。<br>
+      <br>
+      　11.修正个别游戏用专用格式压缩后在GBA上解压时出错，比如“007夜火”。<br>
+      <br>
+      　12.支持马里奥和路易的EEPROM V124存档格式。<br>
+      <br>
+      　13.ROM中文名库增加到1286。 
+      <hr>
+      <b></b><b>2003/9/28</b><br>
+      GBA Link配套软件3.50正式版 下载 <br>
+      <br>
+      　1.修正多语言显示，现在繁体中文、日文可以正确显示了。<br>
+      　2.修正当多选ROM添加时超容量的ROM进行压缩的错误。<br>
+      　3.修正打开ROM列表功能软复位参数的错误。<br>
+      　4.对于ReadBoy、PictureBoy等生成的ROM自动把文件名追加到ROM名后。<br>
+      　5.ROM中文名库增加到1175。<br>
+      　6.一些其它错误的修正。 
+      <hr>
+      <b>2003/9/15</b><br>
+      GBA Link配套软件3.50测试第3版 下载 <br>
+      <br>
+      　1.修正在添加有些ROM时选择压缩模式出现的错误。<br>
+      <br>
+      　　对于一些朋友提到的烧写一些ROM出现死机白屏等问题，添加ROM后可以关闭ROM属性中的“允许软复位”来解决。如果你需要使用软复位功能，对于一些有片头的ROM（比如一些汉化版的游戏）可以在加载ROM时选择去除片头来解决。
+<hr>
+      <b>2003/9/12</b><br>
+      GBA Link配套软件3.50测试第2版 下载 <br>
+      <br>
+      　1.修正对ZIP系列卡带进行存档备份及更新时的错误。
+<hr>
+      <b></b><b>2003/9/10</b><br>
+      GBA Link配套软件3.50测试第1版 下载 <br>
+      <br>
+      　1.自动调用BOMA，实现增强的按键回菜单，对几乎99%的游戏都可以使用SELECT+START<br>
+      　　+A+B组合键进行游戏复位，使用SELECT+START+L+R组合键返回ROM选择菜单。这项功<br>
+      　　能仅对ZIP系列卡带有效。<br>
+      <br>
+      　　另外对于一些有片头的游戏（包括一些汉化的游戏），因为片头是不能去掉的，所以<br>
+      　　BOMA处理后将可能引起游戏死机，所以对于这些游戏请谨慎使用该功能。 <br>
+      <br>
+      　2.增加ROM加密码功能。密码抛弃平常的字母或者数字的输入方式,使用GBA按键的组合,<br>
+      　　更加贴切，使用更加方便。比如现在可以使用“↑↑↓↓←→←→ＢＡＢＡ”来做为<br>
+      　　ROM的密码，在GBA上只要按照顺序按下相应的按键，然后按下START键即可。<br>
+      <br>
+      　　在PC上设置密码时可以使用密码输入下拉框来选择已经设置好的密码，或者使用特点<br>
+      　　的按键来手动输入，"I K J L"是GBA的上下左右键，"Z X"是GBA的AB键，"A 
+      S"是<br>
+      　　GBA的LR键，其中方向键支持4个斜方向。这项功能对ZIP系列卡带和128M专用合卡均<br>
+      　　可使用。 <br>
+      <br>
+      　3.为处理软复位和金手指功能，卡带类型及容量需要用户指定。也就是说如果你使用的<br>
+      　　是ZIP256M卡带就在软件右上角的下拉选择框中选择“ZIP系列合卡256M”。<br>
+      <br>
+      　　为简化卡带类型的选择，当ROM列表为空时，使用检测卡带类型或刷新卡带功能检测到<br>
+      　　何种卡带，就自动设置为何种卡带类型。<br>
+      <br>
+      　4.刷新卡带按钮在普通卡带和128M专用合卡下可以做为检测卡带类型功能使用。 <br>
+      <br>
+      　5.加入TE系列INTEL芯片ID，支持TE系列芯片。(这项未测试) <br>
+      <br>
+      　6.ROM参数里增加是否打补丁选项，可以单独选择每个ROM是否打补丁。 <br>
+      <br>
+      　7.自己手动改动的ROM中文名等参数能够保存进ROM列表文件，以便下次载入时能够自动<br>
+      　　设置。 <br>
+      <br>
+      　8.ROM中文名库更新到1148。 <br>
+      <br>
+      　　另外：金手指等功能因为时间关系还未完善，所以请等待下一版本开放。
+<hr>
+      <b></b><b>2003/8/7</b><br>
+      GBA Link配套软件3.25正式版 下载 <br>
+      <br>
+      　1.修正对已经烧写好的卡带进行修改、删除和添加ROM时有时候出现的错误。 <br>
+      　2.ROM中文名库更新到1120。<br>
+      　3.对超级玛丽4不打补丁，解决超级玛丽4的死机问题
+<hr>
+      <b>2003/7/9</b><br>
+      GBA Link配套软件3.25测试第2版 下载 <br>
+      <br>
+      　1.修正菜单下的智能烧写不能使用的错误。<br>
+      <hr>
+      <b>2003/7/8</b><br>
+      GBA Link配套软件3.25测试第1版 下载<br>
+      <br>
+      　1.增加保存、打开ROM列表的功能。这个功能在主菜单的文件菜单下或ROM列表的右键菜单中调用。<br><br>
+      　2.对ZIP系列卡带增加对已经烧写好的卡带进行修改、删除和添加ROM的功能。修改可以完成修改ROM的中文名、英文名、修改存档属性；删除或添加ROM是从最后一个游戏开始进行。具体方法如下：<br>
+      　　(1).对ZIP系列卡带在界面上增加了一个“刷新卡带”的按钮，首先点击这个按钮，软<br>
+      　　　　件会把卡带中已经烧写的游戏清单列出来显示在ROM列表中。<br>
+      　　(2).现在就可以双击ROM列表中具体的ROM来修改ROM的属性，或者使用“删除ROM”来<br>
+      　　　　从最后一个ROM开始删除ROM，或者使用“添加ROM”来添加新的ROM。<br>
+      　　(3).使用“智能烧写”来把修改过的属性或添加的新ROM烧写到卡带中去。<br><br>
+      　3.备份游戏存档或保存ROM列表时，重名文件提示用户是否覆盖。<br><br>
+      　4.修正错误，在系统参数中选择不加入合卡菜单时不再提示压缩ROM。<br><br>
+      　5.ROM中文名库更新到1090。<br>
+      <hr>
+      <b><br>
+      2003/6/26</b><br>
+      GBA Link配套软件3.22测试第2版 下载 <br>
+      <br>
+      　1.修正不能备份及更新合卡存档的问题。<br>
+      <hr>
+      <b></b><b>2003/6/26</b><br>
+      GBA Link配套软件3.22测试第1版 下载 <br>
+      <br>
+      　1.改进专用格式的压缩算法，在GBA上的<b><font color="#FFCC00">解压速度是以前版本的200%</font></b>，在GBA上解压压缩成14M的32M玛丽2仅需要11秒左右。增加调整压缩等级，共有2级可选（低等级、高等级），在低等级下压缩ROM速度很快，但压缩比小于高等级，在GBA上解压速度和高等级基本相同。<br><br>
+      　2.开放ZIP压缩格式，但由于ZIP格式的特性，在GBA上解压速度很慢，解压压缩成13M的玛丽2约需要2分半，所以不推荐使用。ZIP格式压缩具有9级压缩等级可选，越高的压缩等级压缩比越高，但压缩速度也越慢，在GBA上的解压速度基本相同。<br><br>
+      　3.更新ROM中文名库，更新到编号1080。<br><br>
+      　4.自动识别PCEAdvance生成的ROM，正确调整存档空间。<br><br>
+      　5.取消DUMP卡带功能。<br><br>
+      　6.加入ZIP文件时，会显示解压ZIP的进度。<br><br>
+      　7.修正龙珠2、大战略2烧写到老128M合卡死机的问题。<br>
+      <hr>
+      <b><br>
+      2003/6/14</b><br>
+      GBA Link配套软件3.20正式版 下载<br>
+      <br>
+      　1.更新制作NES合卡用的POCKETNES模拟器为最新的V9.6版。<br>
+      　2.更新ROM中文名库，更新到编号1060。<br>
+      　3.修正修改游戏名时的错误。<br>
+      　4.修正有时候系统参数中的I/O延迟字样不见。<br>
+      　5.修正在专用合卡项下烧写普通卡带，会立即提示烧写完成的提示错误。<br>
+      　6.修正删除列表中的ROM后，烧写到卡带上的图标显示错乱。<br>
+      <hr>
+      <b>2003/6/5</b><br>
+      GBA Link配套软件3.20测试第3版 下载<br>
+      <br>
+      　1.当存档空间不足时还可以继续加入游戏，但当前加入的这个游戏将不能存档。这样对于一些存档并不重要的游戏合卡时增大了能够合卡的机会。(这项改进仅对ZIP系列卡带有效)<br>
+      <br>
+      　2.系统参数中增加“不使用按４键回菜单功能”选项，当选中这个选项时烧写的游戏将没有按START+SELECT+A+B键回菜单功能。<br>
+      <br>
+      　3.对一些打过补丁的游戏添加入列表中时将不再弹出窗口提示打补丁失败。<br>
+      <br>
+      <hr>
+      <b>2003/6/4</b><br>
+      GBA Link配套软件3.20测试第2版 下载 <br>
+      <br>
+      　1.修正ROM名编辑时的一些错误。<br>
+      <br>
+      　2.改善了有时候会初始化GBA失败的问题。<br>
+      <br>
+      　3.改进并口驱动初始化代码，改善了在XP下有时候提示找不到DriverLINX驱动的问题。<br>
+      <br>
+      <hr>
+      <b>2003/6/3</b><br>
+      GBA Link配套软件3.20测试第1版 下载 <br>
+      <br>
+      　1.支持ZIP系列卡带的烧录。目前支持专用格式的压缩方式，ZIP格式稍后开放。<br>
+      <br>
+      　2.对程序的烧写部分做了优化，提高了烧写速度。目前烧写卡带最高速度能达到每秒7xk，烧写256M卡带仅需要7分多。并且速度提高对所有类型的卡带都有效。<br>
+      <br>
+      　3.128M专用合卡及ZIP系列卡带的合卡菜单图形化，采用图标和12点阵的汉字显示，图标可以表示不同的文件类型，比如：GBA文件、ZIP文件、专用压缩格式的文件、NES游戏、电子书、电影文件、音乐文件等，非常直观。并且每行显示的中文游戏名汉字数提高到18个。<br>
+      <br>
+      　4.对合卡菜单程序专门做了优化，菜单程序更小，对于ZIP系列卡带约8.5k左右，对于128M专用合卡约6k左右，占用空间更小。并且合卡菜单位置动态分配，合卡中的任一ROM有空间均可插入合卡菜单。因此合卡兼容性极好。<br>
+      <br>
+      　5.改进不关机回菜单功能，在ROM运行过程中，同时按下START＋SELECT＋A＋B键后，对复位GBA修改为冷启动GBA方式，这样对游戏兼容性更好。<br>
+      <br>
+      　6.烧录等操作之前对GBA的初始化改进为更快速的方式，初始传输的数据量仅为1k左右。<br>
+      <br>
+      　7.对自动打存档补丁功能优化，取消多种补丁方式，补丁更稳定可靠。<br>
+      <br>
+      　8.合卡游戏进度与更新窗口中增加启动GBA的按钮，当更新完存档后，可以使用这个按钮直接进入游戏。<br>
+      <br>
+      <br>
+      <b>另外，对原128M专用合卡做了如下修正：</b><br>
+      　1.解决了某些游戏由于合卡造成的黑屏死机的bug。比如疯狂的士。<br>
+      　2.解决了存档备份时导致存档丢失的错误。<br>
+      　3.解决了某些游戏由于存档补丁错误导致的不能存档或者黑屏死机。<br>
+      <br>
+      <br>
+      <b>对改造卡做了如下改进：</b><br>
+      　1.完善了自动检测卡带类型的功能，可以支持两芯片以上的卡带(比如三芯片、四芯片),<br>
+      　　取消了手动选择功能，使用更方便。并对特殊卡带单独列出，供手动选择。<br>
+      　2.检测卡带时，改为读写最后一块，减少了对卡带内游戏数据破坏的可能性，在多数情<br>
+      　　况下，即使卡带不能改造，仍能保留原来的数据。 <br>
+      　3.修正了对某种芯片扇区擦除错误的问题。这样对双芯片卡带中两片芯片不同的卡带支<br>
+      　　持的更好。<br>
+      <br>
+      <hr>
+      <b></b><b></b> <b>2003/3/24</b><br>
+      GBA Link配套软件3.11测试第3版 下载 <br>
+      <br>
+      继续修正一些错误。其中包括烧写缩减到48M游戏的一个错误，使用64M卡带烧写一些游戏可能死机等。<br>
+      <br>
+      <hr>
+      <b></b><b>2003/3/22</b><br>
+      GBA Link配套软件3.11测试第2版 下载 <br>
+      <br>
+      修正了烧写某些游戏合卡时出现的错误。<br>
+      <br>
+      <hr>
+      <b>2003/3/21</b><br>
+      GBA Link配套软件3.11测试版 下载 <br>
+      <br>
+      　1.增加去除游戏片头功能。当在添加ROM时软件发现游戏有片头或者有一些其它附加的模块时会提示，用户可以选择是否去除这个附加模块。<br>
+      <br>
+      　2.增加修复ROM头功能。这样可以解决一些ROM头错误，引起烧写到卡带上只能烧写完成后自动执行一次的问题。<br>
+      <br>
+      　3.增加了新ROM的中文名。ROM中文名列表文件是ROMNAME.LST，在安装后的软件目录下，用户也可以自己修改这个文件来增加新ROM的中文名和英文名。<br>
+      <br>
+      　4.使用"WHowe"修改版PocketNES v9.1制作GBA+FC合集，并且完成了非合卡卡带烧写GBA+FC游戏FC游戏和GBA游戏记录不冲突。在此对于"WHowe"的工作深表感谢。<br>
+      　　另外为配合今后的PocketNES的升级把制作GBA+FC合集使用的PocketNES另设为一个文件，名字为EDIY1.GBA，这样以后有新的修改版的PocketNES用户可以自己更换新版本。<br>
+      　　WHowe修改版PocketNES v9.1还有另外一个版本，没有完成GBA+FC游戏时FC游戏和GBA游戏记录不冲突，但这个版本的即时状态存储位置更多。这里<a href="#">下载</a>。<br>
+      <br>
+      　5.增加了128M合卡的测试功能。<br>
+      　测试时，先要把128M合卡插入到GBA，然后打开GBA电源。接着打开3.11版软件，在帮助菜单下选择“128M合卡测试”。<br>
+      <br>
+      　　(1).测试FLASH<br>
+      　　　　这一项用来测试烧写到FLASH芯片的数据是否正确。单击这个按钮，程序开始测<br>
+      　　试，如果测试顺利完成，表明写入的数据正确无误。如果测试发生中断，并提示某个<br>
+      　　错误。则表示写入的数据不正确，这可能是卡带有问题，或者是卡带没有插好，或者<br>
+      　　有接触不良等问题。可以重新插好卡带再试，也可和我们联系。<br>
+      <br>
+      　　(2).测试SRAM<br>
+      　　　　这一项用来测试写入到SRAM芯片的数据是否正确。128M合卡有四块存储区，测<br>
+      　　试过程中会对这四个块分别测试。只有四块都通过测试，才表明卡带的SRAM部分是<br>
+      　　正常的。如果发现有问题，可以和我们联系。<br>
+      <br>
+      　　(3).测试电池<br>
+      　　　　这一项是用来测试电池电压是否充足的。在测试过程中会有提示，这时需要关掉<br>
+      　　GBA，然后把卡带拔出，等待一小会儿，然后再把卡带插好，打开GBA。这时，单击<br>
+      　　“确定”按钮。测试会继续。如果电池电量充足，测试就会通过，否则，表示电量不<br>
+      　　足，需要充电。充电的方法就是玩游戏。<br>
+      <br>
+      　　(4).全面测试<br>
+      　　　　这一项就是顺序执行前三项的所有测试。<br>
+      <br>
+      　6.修正了一些128M合卡烧写游戏死机的问题。<br>
+      <br>
+      　7.修正了对于部分64M卡带识别为32M卡带的问题。<br>
+      <br>
+      　8.修正了缩减后容量减少比较多的ROM不能合卡的问题。<br>
+      <br>
+      　9.其它一些错误的修正。
+<hr>
+      <b>2003/3/5</b><br>
+      GBA Link配套软件3.10版 下载<br>
+      <br>
+      　1.配合GBALink专用的128M合卡支持合卡功能，可以写入多个GBA游戏。并且合卡支持多GBA游戏合NES游戏的功能，你可以直接在ROM列表中加入NES游戏。<br>
+      <br>
+      　2.合卡菜单支持中文游戏名，软件支持自动把游戏名替换为中文名、英文名或ROM名，用户也可以自己编辑游戏名。<br>
+      <br>
+      　3.在ROM列表的右键菜单中增加ROM烧写之前的试运行功能。<br>
+      <br>
+      　4.新增日文语言包。感谢:Barbiesos(葛凡;妺杴;contect to barbiesos@163.com)<br>
+      <hr>
+      <b></b><b>2002/12/06</b><br>
+      GBA Link配套软件3.01版 下载<br>
+      <br>
+      1.支持POKEMON游戏的存档。<br>
+      2.修正对某些FC游戏进行合卡出现的丢失FC ROM问题。<br>
+      3.修正对一些FLASH存档格式的游戏的支持，比如：Chu Chu Rocket、Advance Wars等。<br>
+      4.一些细节的调整。<br>
+      5.一些错误的修正。<br>
+      <hr>
+      <b>2002/10/30</b><br>
+      GBA Link配套软件3.00版 下载<br>
+      <br>
+      1.为适应合卡功能，软件界面做了比较大的调整。增加了选择多文件的列表，增加数个按<br>
+      　钮来更加方便的进行擦除卡带、烧写卡带和智能烧写卡带等操作。<br>
+      <br>
+      2.GBA游戏＋多个FC（NES）游戏合卡功能。注意：由于卡带存档空间的限制，GBA游戏和<br>
+      　FC游戏的存档空间是公用的，这样如果你在FC游戏或GBA游戏中存档将覆盖GBA游戏或<br>
+      　FC游戏的存档。<br>
+      <br>
+      3.直接烧写多个FC（NES）游戏功能。你可以在列表中添加多个FC游戏，然后直接烧写。<br>
+      <br>
+      4.可以对FLASH存档类型游戏自动打补丁转换为SRAM存档格式，这样新卡带配合本软件可<br>
+      　以完美实现各种存档类型的支持。（注意：以前的SRAM存档类型的FLASH卡带也可以利<br>
+      　用这个功能来玩FLASH存档类型的游戏，但由于这些卡带SRAM存储空间的问题，一些游<br>
+      　戏存档会出现错误）<br>
+      <br>
+      5.支持不重新开关GBA进行下一个操作。比如：擦除完卡带后不需要重新开关GBA来进入等<br>
+      　待连接模式就可以直接进行烧写卡带或更新游戏进度等功能。但如果某个操作中发生错<br>
+      　误，这个功能将失效。<br>
+      <br>
+      6.不需要任何卡带玩FC游戏的功能支持上传多个文件。你可以在列表中添加多个FC游戏，<br>
+      　然后执行传到GBA即可，由于GBA内存容量2M位(256K)的限制，游戏的总容量不能大于<br>
+      　2M位。<br>
+      <br>
+      7.修正对个别EEPROM存档类型的游戏补丁错误，比如：046-雷曼。并且在系统参数中可以<br>
+      　选择补丁方式，选择补丁类型1优先或者补丁类型2优先。这样当用某种补丁优先方式失<br>
+      　败或者补丁后游戏不能运行时，可以选择另一种补丁方式优先。<br>
+      <br>
+      8.放宽系统参数中I/O延迟的最大值，目前的最大值为20，这样如果某些电脑数据传输不稳<br>
+      　定，可以调的更大些。<br>
+      <br>
+      9.一些细节的调整。<br>
+      <br>
+      10.一些错误的修正。<br>
+      <hr>
+      <b>2002/10/30</b><br>
+      GBA Link配套软件2.12版 下载<br>
+      <br>
+      1.增强对EEPROM存档游戏自动打补丁功能。以前不能自动打补丁的游戏现在都可以了。<br>
+      2.在DUMP和烧写卡带时自动读写游戏进度。在读取或烧写卡带时如果有和ROM文件名相同的<br>
+      　存档进度文件(扩展名是SAV)在读取或烧写完成后会自动读写存档进度文件。<br>
+      3.可以在系统参数中调整烧写卡带等操作时的任务优先级。这样如果你的电脑足够的好，并<br>
+      　且在烧写卡带等操作数据传输十分稳定，可以把优先级调整为Normal或Low，这样你就可<br>
+      　以在烧写卡带等操作时运行其它软件了（比如上网等等）。<br>
+      4.修正了对双芯片卡带中两片芯片型号不同的支持。这个问题也解决了一些FUJITSU芯片卡<br>
+      　带烧写游戏后不能运行的问题。<br>
+      5.一些错误的修正。<br>
+      6.一些细节的调整。<br>
+      <br>
+      <hr>
+      <b>2002/10/24</b><br>
+      GBA Link配套软件2.10版 下载<br>
+      <br>
+      1.软件界面的多语言支持<br>
+      　目前包含简体中文、繁体中文、英文语言包，可以在系统参数中选择使用。欢迎大家制作<br>
+      　其它语言的语言包提供给我们(范例请查看软件内自带的英文语言包)。<br>
+      2.对EEPROM存档游戏自动打补丁<br>
+      　在烧录之前自动检测ROM进度存储类型，如果是EEPROM存档格式自动打补丁。这个功能也<br>
+      　可以在系统参数中关闭。<br>
+      3.烧写卡带、智能烧写卡带、上传NES游戏和上传GBA游戏功能支持ZIP文件。<br>
+      4.烧录时自动缩减ROM容量。<br>
+      　比如恶魔城中文版被缩减为6677K，可以减少烧写时间。这个功能也可以在系统参数中关<br>
+      　闭。<br>
+      5.三菱芯片的更好支持<br>
+      　解决了M6MGT320芯片的引导块擦除BUG。<br>
+      　对M6MGT647、M6MGT641、M6MG3T64、M6MG4B64等芯片增强支持。但由于一些卡带硬件<br>
+      　电路的原因，还是有一些使用这些三菱芯片的卡带不能被支持。<br>
+      6.对双芯片卡带中两片芯片型号不同的支持。<br>
+      7.烧写之前检测ROM大小是否和卡带匹配<br>
+      8.自动检测卡带容量并DUMP ROM<br>
+      　注意，有些卡带并不能自动检测出容量，这时候就需要手动选择ROM容量了。<br>
+      9.一些细节的调整<br>
+      10.一些错误的修正<br>
+      <br>
+      <hr>
+      <b>2002/9/17</b><br>
+      GBA Link配套软件2.02版<br>
+      <br>
+      1.支持Windows9X、Windows NT、Windows2000、WindowsXP。<br>
+      2.一些细节的调整。<br>
+      <br>
+      <hr>
+      <b>2002/9/14</b><br>
+      GBA Link配套软件2.01版 下载<br>
+      <br>
+      1.增加支持FLASH格式的游戏进度备份和更新功能（这个功能可以对非烧录卡使用）。<br>
+      2.增加FLASH游戏进度格式和SRAM游戏进度格式的自动识别并备份或更新。这样当你不知道你的卡<br>
+      　带是哪种存档格式都可以自动进行识别并备份和更新。<br>
+      3.改善了一些电脑上识别不到GBA Link的问题。<br>
+      4.一些错误的修正。 <br>
+      <br>
+      <hr>
+      <b>2002/9/5</b><br>
+      GBA Link配套软件2.0版 下载<br>
+      <br>
+      1.支持D版卡带改造的FLASH卡带的烧录，这样组成了目前最廉价的GBA Flash烧录系统。GBA <br>
+      　Link烧录系统是GBA游戏机的辅助设备，利用这套系统可以在GBA上运行各种游戏ROM、各种<br>
+      　DEMO、各种第三方软件，以达到娱乐及学习、开发等用途。<br>
+      <br>
+      2.目前支持INTEL、FUJITSU、TOSHIBA、MITSUBISHI公司的数十种FLASH芯片的卡带。<br>
+      <br>
+      3.具备自动检测卡带功能，可以自动识别采用各种FLASH芯片的D版卡带，并且利用此功能可以检<br>
+      　测未知型号的D版FLASH卡带。<br>
+      <br>
+      4.除了具备基本的烧写功能外，还具备智能烧写卡带功能。本项功能可以一边擦除，一边烧写，<br>
+      　擦除和烧写同时进行，因此可取代基本的擦除和烧写两项功能。<br>
+      　当选择本项功能来烧写ROM文件时，程序会自动根据ROM文件的大小，擦除出相应大小的空间，<br>
+      　供写入文件，而不是花费更多的时间去擦除整个卡带。换句话说就是用多少空间就腾出多少空<br>
+      　间。这样做的最大好处就是当ROM文件小于卡带空间时，能够有效的缩短擦除、烧写时间。<br>
+      <br>
+      介绍及详细使用说明请见<a href="#">《GBA Link烧录系统介绍及使用说明》</a>。<br>
+      <br>
+      <hr>
+      <b>2002/7/1</b><br>
+      GBA Link配套软件1.0版 下载<br>
+      <br>
+      1.支持向GBA上传GBA游戏（大小不能超过256K）。<br>
+      2.支持向GBA上传NES游戏（大小不能超过214K）。<br>
+      3.支持DUMP任何游戏卡带。<br>
+      4.支持使用SRAM的游戏卡带的进度存取。<br>
+      <br>
+      介绍及详细使用说明请见<a href="#">《让你的GBA更好玩－－集三大功能于一身的GBA Link》</a>。<br>
+      <br>
+      <br>
+      <b><i> </i></b></td>
+	 
+	  
+    <td rowspan="3" background="gbalink/right.gif"><br></td><td width="1"></td></tr><tr><td height="47"></td></tr><tr><td colspan="3" bgcolor="#103184" valign="top">&nbsp;<br></td><td height="2"></td></tr><tr><td valign="top" height="13"><img src="gbalink/left_bom.gif" width="24" height="24"></td><td colspan="4" background="gbalink/bom.gif" valign="center">&nbsp;</td><td><img src="gbalink/right_bom.gif" width="24" height="24"></td><td></td></tr><tr><td height="0"></td><td></td><td width="885"></td><td width="19"></td><td width="100%"></td><td></td><td></td></tr></tbody></table>
+	<br>
+	<table border="0" cellpadding="0" cellspacing="0" width="777" align="center"><tbody><tr><td rowspan="2" width="24" height="24"><img src="gbalink/left_top.gif" width="24" height="24"></td><td colspan="4" rowspan="2" background="gbalink/top.gif">&nbsp;</td><td rowspan="2" width="24" height="24"><img src="gbalink/right_top.gif" width="24" height="24"></td></tr><tr></tr><tr><td valign="top" background="gbalink/left.gif" height="13" rowspan="2"></td><td colspan="4" rowspan="2" valign="center" bgcolor="#103184">
+      <div align="center">【模拟器硬件DIY】版权所有 Copyright(C) 2001-2004 本站资料未经许可，请勿转载，如有需求，请<a href="#">联系</a>。</div>
+    </td><td rowspan="2" background="gbalink/right.gif"><br></td></tr><tr></tr><tr><td valign="top" height="13"><img src="gbalink/left_bom.gif" width="24" height="24"></td><td colspan="4" background="gbalink/bom.gif" valign="center">&nbsp;</td><td><img src="gbalink/right_bom.gif" width="24" height="24"></td></tr><tr></tr></tbody></table>&nbsp;<br></body></html>
